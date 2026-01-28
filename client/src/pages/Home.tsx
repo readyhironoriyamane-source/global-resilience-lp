@@ -97,7 +97,7 @@ export default function Home() {
         <div className="container relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left: Text Content */}
-            <div className="max-w-2xl relative z-20">
+            <div className="max-w-3xl relative z-20">
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -116,8 +116,8 @@ export default function Home() {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-white mb-8 leading-tight"
               >
-                国内最高峰の「知」に、<br />
-                世界最先端の「武器」を。
+                <span className="inline-block whitespace-nowrap">国内最高峰の「知」に、</span><br />
+                <span className="inline-block whitespace-nowrap">世界最先端の「武器」を。</span>
               </motion.h1>
               
               <motion.p
