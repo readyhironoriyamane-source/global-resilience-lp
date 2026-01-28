@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { motion, useScroll, useTransform, useSpring } from "framer-motion";
-import { ArrowRight, Shield, Globe2, Zap, LayoutDashboard, MessageSquare, ShoppingBag, CheckCircle2, FileText, Users, ChevronDown, Activity, Lock, Server } from "lucide-react";
-import { useRef, useState, useEffect } from "react";
+import { motion, useScroll, useSpring } from "framer-motion";
+import { ArrowRight, Shield, CheckCircle2, LayoutDashboard, Users, ShoppingBag, ChevronDown, Zap, Globe2 } from "lucide-react";
 
 // --- Components ---
 
@@ -75,9 +74,9 @@ export default function Home() {
             </div>
           </div>
           <div className="hidden md:flex items-center gap-10 text-sm font-bold tracking-widest uppercase text-muted-foreground">
-            <a href="#mission" className="hover:text-white transition-colors">Mission</a>
-            <a href="#features" className="hover:text-white transition-colors">Features</a>
-            <a href="#pricing" className="hover:text-white transition-colors">Pricing</a>
+            <a href="#problem" className="hover:text-white transition-colors">Problem</a>
+            <a href="#solution" className="hover:text-white transition-colors">Solution</a>
+            <a href="#value" className="hover:text-white transition-colors">Value</a>
           </div>
           <div className="flex items-center gap-4">
             <Button variant="ghost" className="hidden md:flex text-white hover:bg-white/10 font-mono text-xs">
@@ -104,7 +103,7 @@ export default function Home() {
             >
               <span className="h-[1px] w-12 bg-primary" />
               <span className="font-mono text-primary text-sm font-bold tracking-widest uppercase">
-                System Online / Ver. 5.0
+                System Online / Ver. 6.0
               </span>
             </motion.div>
             
@@ -112,21 +111,20 @@ export default function Home() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-huge font-display text-white mb-8"
+              className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-white mb-8 leading-tight"
             >
-              KNOWLEDGE<br />
-              AS A WEAPON.
+              国内最高峰の「知」に、<br />
+              世界最先端の「武器」を。
             </motion.h1>
             
             <motion.p
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-xl md:text-2xl text-muted-foreground max-w-2xl mb-12 leading-relaxed"
+              className="text-xl md:text-2xl text-muted-foreground max-w-3xl mb-12 leading-relaxed"
             >
-              国内最高峰の「知」に、世界最先端の「武器」を。<br />
-              <span className="text-white font-bold">The Global Resilience Hub</span> は、<br />
-              組織の危機管理能力をOSレベルでアップデートします。
+              一般社団法人 The Global Resilience Summit は進化します。<br />
+              会員限定のAI防災プラットフォーム<strong className="text-white font-bold">「The Global Resilience Hub」</strong>、標準搭載開始。
             </motion.p>
             
             <motion.div
@@ -136,13 +134,18 @@ export default function Home() {
               className="flex flex-col sm:flex-row gap-4"
             >
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-white font-bold text-lg px-10 h-16 rounded-none shadow-[0_0_30px_rgba(var(--primary),0.3)]">
-                Hubのデモを見る
+                Summitに入会し、Hubを利用する
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
-              <Button variant="outline" size="lg" className="border-white/20 text-white hover:bg-white/10 font-bold text-lg px-10 h-16 rounded-none">
-                資料をダウンロード
-              </Button>
             </motion.div>
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.8 }}
+              className="mt-4 text-sm text-muted-foreground font-mono"
+            >
+              ※月額換算 50,000円〜
+            </motion.p>
           </div>
         </div>
 
@@ -158,47 +161,37 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Mission / Problem */}
-      <section id="mission" className="py-32 border-t border-white/5">
+      {/* Problem Section */}
+      <section id="problem" className="py-32 border-t border-white/5">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-20 items-center">
             <div>
               <SectionHeading 
                 align="left"
-                subtitle="THE BLIND SPOT"
+                subtitle="THE PROBLEM"
                 title={<>防災担当者のデスクは、<br />なぜ<span className="text-primary">「孤独」</span>なのか。</>}
               />
               <div className="space-y-8">
-                <div className="flex gap-6">
-                  <div className="w-12 h-12 bg-white/5 flex items-center justify-center shrink-0 border border-white/10">
-                    <span className="font-display text-2xl font-bold text-muted-foreground">01</span>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-white mb-2">正解が見つからない</h3>
-                    <p className="text-muted-foreground leading-relaxed">
-                      災害は待ってくれません。しかし、対策に必要な情報は世界中に散らばり、言語の壁に阻まれ、現場のノウハウは個人の頭の中に眠ったままです。
-                    </p>
-                  </div>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  災害は待ってくれません。しかし、対策に必要な情報は世界中に散らばり、言語の壁に阻まれ、現場のノウハウは個人の頭の中に眠ったままです。
+                </p>
+                <div className="pl-6 border-l-2 border-primary/30 space-y-4">
+                  <p className="text-xl font-bold text-white">「検索しても、正解が見つからない」</p>
+                  <p className="text-xl font-bold text-white">「他社がどう動いているか、聞ける相手がいない」</p>
                 </div>
-                <div className="flex gap-6">
-                  <div className="w-12 h-12 bg-white/5 flex items-center justify-center shrink-0 border border-white/10">
-                    <span className="font-display text-2xl font-bold text-muted-foreground">02</span>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-white mb-2">比較対象がない</h3>
-                    <p className="text-muted-foreground leading-relaxed">
-                      「他社はどうしているのか？」その問いに答えられる人は社内にいません。情報の孤立が、意思決定の遅れと品質の低下を招いています。
-                    </p>
-                  </div>
-                </div>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  その情報の孤立を、テクノロジーとコミュニティの力で解決します。
+                </p>
               </div>
             </div>
             <div className="relative">
               <div className="aspect-square bg-gradient-to-br from-white/5 to-transparent border border-white/10 p-8 flex items-center justify-center">
                 <div className="text-center">
-                  <Lock className="w-16 h-16 text-muted-foreground mx-auto mb-6" />
-                  <p className="font-mono text-sm text-muted-foreground tracking-widest uppercase">Access Denied</p>
-                  <p className="text-white font-bold mt-2">Closed Knowledge</p>
+                  <div className="w-20 h-20 border-2 border-dashed border-muted-foreground rounded-full mx-auto mb-6 flex items-center justify-center">
+                    <span className="text-2xl font-bold text-muted-foreground">?</span>
+                  </div>
+                  <p className="font-mono text-sm text-muted-foreground tracking-widest uppercase">Connection Lost</p>
+                  <p className="text-white font-bold mt-2">Isolated Knowledge</p>
                 </div>
               </div>
               {/* Decorative Elements */}
@@ -209,112 +202,131 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Solution / Features */}
-      <section id="features" className="py-32 bg-white/[0.02]">
+      {/* Solution Section */}
+      <section id="solution" className="py-32 bg-white/[0.02]">
         <div className="container">
           <SectionHeading 
-            subtitle="CORE MODULES"
-            title={<>組織にインストールする、<br />3つの<span className="text-primary">「拡張機能」</span></>}
+            subtitle="THE SOLUTION"
+            title={<>あなたの組織に<br />「防災のOS」をインストールする。<br /><span className="text-primary text-3xl md:text-4xl block mt-4">The Global Resilience Hub 3つの機能</span></>}
           />
 
           <div className="grid md:grid-cols-3 gap-8">
             <TechCard delay={0}>
               <div className="h-1 bg-primary w-12 mb-8" />
               <LayoutDashboard className="w-10 h-10 text-white mb-6" />
-              <h3 className="text-2xl font-display font-bold text-white mb-4">AI INTELLIGENCE</h3>
-              <p className="text-muted-foreground mb-6 leading-relaxed">
-                世界中の防災データをAIが収集・構造化。あなたの組織に必要な情報だけを、日本語で要約して毎朝お届けします。
+              <h3 className="text-2xl font-display font-bold text-white mb-2">AI Intelligence</h3>
+              <p className="text-sm font-bold text-primary mb-4">情報の構造化</p>
+              <h4 className="text-lg font-bold text-white mb-4">世界中のニュース・論文を、AIが「使える情報」に。</h4>
+              <p className="text-muted-foreground leading-relaxed">
+                国内外の膨大な防災データをAIが収集・分析。あなたの組織に必要な情報だけを、日本語で要約して毎朝お届けします。リサーチにかける時間は、もう必要ありません。
               </p>
-              <ul className="space-y-3 text-sm text-white/80 font-mono">
-                <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> グローバルリスク検知</li>
-                <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> 自動要約レポート</li>
-              </ul>
             </TechCard>
 
             <TechCard delay={0.2}>
               <div className="h-1 bg-primary w-12 mb-8" />
               <Users className="w-10 h-10 text-white mb-6" />
-              <h3 className="text-2xl font-display font-bold text-white mb-4">COMMUNITY</h3>
-              <p className="text-muted-foreground mb-6 leading-relaxed">
-                教科書にはない「現場のリアル」を共有。検索では出てこない失敗談や運用ルールを、スレッド形式で相談できます。
+              <h3 className="text-2xl font-display font-bold text-white mb-2">Community & Thread</h3>
+              <p className="text-sm font-bold text-primary mb-4">知の共有</p>
+              <h4 className="text-lg font-bold text-white mb-4">教科書にはない「現場のリアル」がここにある。</h4>
+              <p className="text-muted-foreground leading-relaxed">
+                Summitに集うエキスパートや、世界の防災担当者と繋がるクローズドなコミュニティ。検索では出てこない「失敗談」や「運用ルール」を、スレッド形式でいつでも質問・相談できます。
               </p>
-              <ul className="space-y-3 text-sm text-white/80 font-mono">
-                <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> 匿名相談スレッド</li>
-                <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> ベストプラクティス共有</li>
-              </ul>
             </TechCard>
 
             <TechCard delay={0.4}>
               <div className="h-1 bg-primary w-12 mb-8" />
               <ShoppingBag className="w-10 h-10 text-white mb-6" />
-              <h3 className="text-2xl font-display font-bold text-white mb-4">MARKETPLACE</h3>
-              <p className="text-muted-foreground mb-6 leading-relaxed">
-                課題解決の技術と出会い、即座に導入。防災テック企業の最新ソリューションを、スムーズに商談・契約できます。
+              <h3 className="text-2xl font-display font-bold text-white mb-2">Solution Marketplace</h3>
+              <p className="text-sm font-bold text-primary mb-4">技術の実装</p>
+              <h4 className="text-lg font-bold text-white mb-4">課題解決の技術と出会い、即座に導入する。</h4>
+              <p className="text-muted-foreground leading-relaxed">
+                防災テック企業の最新ソリューションが集結。事例を見るだけでなく、そのまま担当者と繋がり、商談や契約までスムーズに進められます。
               </p>
-              <ul className="space-y-3 text-sm text-white/80 font-mono">
-                <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> ソリューション検索</li>
-                <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> ダイレクト商談</li>
-              </ul>
             </TechCard>
           </div>
         </div>
       </section>
 
-      {/* Pricing / Offer */}
-      <section id="pricing" className="py-32">
+      {/* Value / Offer Section */}
+      <section id="value" className="py-32">
         <div className="container">
-          <div className="max-w-4xl mx-auto bg-card border border-white/10 p-8 md:p-16 relative overflow-hidden">
+          <div className="max-w-5xl mx-auto bg-card border border-white/10 p-8 md:p-16 relative overflow-hidden">
             <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-primary via-white to-primary" />
             
-            <div className="text-center mb-12">
+            <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-6">
-                すべてを、ひとつの会費で。
+                「Summit」への入会ひとつで、<br />すべてが手に入る。
               </h2>
-              <p className="text-lg text-muted-foreground">
-                The Global Resilience Hub は、一般社団法人 The Global Resilience Summit の<br />
-                会員限定プラットフォームとして提供されます。
-              </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 items-center border-t border-white/10 pt-12">
-              <div>
-                <h3 className="text-xl font-bold text-white mb-6">会員特典に含まれるもの</h3>
-                <ul className="space-y-4">
-                  <li className="flex items-center gap-3 text-white">
-                    <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center">
-                      <CheckCircle2 className="w-4 h-4 text-primary" />
-                    </div>
-                    <span className="font-medium">定例会・カンファレンス参加権</span>
-                  </li>
-                  <li className="flex items-center gap-3 text-white">
-                    <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center">
-                      <CheckCircle2 className="w-4 h-4 text-primary" />
-                    </div>
-                    <span className="font-medium">グローバルネットワークへのアクセス</span>
-                  </li>
-                  <li className="flex items-center gap-3 text-white bg-white/5 p-3 -mx-3 rounded">
-                    <div className="w-6 h-6 rounded-full bg-primary flex items-center justify-center">
-                      <Zap className="w-4 h-4 text-white fill-current" />
-                    </div>
-                    <span className="font-bold text-primary">The Global Resilience Hub フル利用</span>
+            <div className="grid md:grid-cols-2 gap-8 items-stretch mb-12">
+              {/* Old Model */}
+              <div className="p-8 border border-white/10 bg-white/5 opacity-60 flex flex-col">
+                <h3 className="text-xl font-bold text-muted-foreground mb-6">これまでの協会</h3>
+                <ul className="space-y-4 mb-8 flex-grow">
+                  <li className="flex items-center gap-3 text-muted-foreground">
+                    <CheckCircle2 className="w-5 h-5" />
+                    <span>定例会・カンファレンス参加（人脈・権威）</span>
                   </li>
                 </ul>
-              </div>
-              
-              <div className="text-center md:text-right">
-                <p className="font-mono text-sm text-muted-foreground mb-2 uppercase tracking-widest">Annual Membership</p>
-                <div className="flex items-baseline justify-center md:justify-end gap-2 mb-2">
-                  <span className="text-6xl font-display font-bold text-white">¥600,000</span>
-                  <span className="text-xl text-muted-foreground">/ 年</span>
+                <div className="pt-6 border-t border-white/10">
+                  <p className="text-2xl font-display font-bold text-muted-foreground">年額 60万円</p>
                 </div>
-                <p className="text-sm text-primary font-bold mb-8">
-                  (月額換算 ¥50,000)
-                </p>
-                <Button size="lg" className="w-full bg-white text-black hover:bg-white/90 font-bold h-14 rounded-none">
-                  入会案内を請求する
-                </Button>
+              </div>
+
+              {/* New Model */}
+              <div className="p-8 border-2 border-primary bg-card relative flex flex-col shadow-[0_0_50px_rgba(var(--primary),0.1)]">
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-white text-xs font-bold px-4 py-1 uppercase tracking-wider">
+                  The New Standard
+                </div>
+                <h3 className="text-xl font-bold text-white mb-6">これからの協会</h3>
+                <ul className="space-y-4 mb-8 flex-grow">
+                  <li className="flex items-center gap-3 text-white">
+                    <CheckCircle2 className="w-5 h-5 text-primary" />
+                    <span>定例会・カンファレンス参加（人脈・権威）</span>
+                  </li>
+                  <li className="flex items-center gap-3 text-white bg-primary/10 p-3 -mx-3 border border-primary/20">
+                    <Zap className="w-5 h-5 text-primary fill-current" />
+                    <span className="font-bold">The Global Resilience Hub フルアクセス（AI・実務）</span>
+                  </li>
+                </ul>
+                <div className="pt-6 border-t border-white/10">
+                  <div className="flex items-baseline gap-4">
+                    <p className="text-3xl font-display font-bold text-white">据え置き 年額 60万円</p>
+                  </div>
+                </div>
               </div>
             </div>
+
+            <div className="text-center max-w-3xl mx-auto">
+              <p className="text-2xl md:text-3xl font-bold text-white mb-6 leading-tight">
+                月額換算、わずか5万円。<br />
+                アルバイト1人分のコストで、<br />
+                世界中の防災知見とAI、そして国内最高クラスのネットワークをあなたのチームに。
+              </p>
+              <p className="text-lg text-muted-foreground mb-10">
+                これは「会費」ではありません。組織の生存能力を高めるための、最も確実な「投資」です。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-32 border-t border-white/5 bg-white/[0.02]">
+        <div className="container text-center">
+          <h2 className="text-4xl md:text-6xl font-display font-bold text-white mb-12">
+            備えるレベルを、世界基準へ。
+          </h2>
+          
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
+            <Button size="lg" className="bg-primary hover:bg-primary/90 text-white font-bold text-lg px-12 h-20 rounded-none shadow-[0_0_30px_rgba(var(--primary),0.3)]">
+              The Global Resilience Summit 入会案内<br />
+              <span className="text-sm font-normal opacity-80">（Hub機能詳細）</span>
+            </Button>
+            <Button variant="outline" size="lg" className="border-white/20 text-white hover:bg-white/10 font-bold text-lg px-12 h-20 rounded-none">
+              Hubのデモ画面を見る
+            </Button>
           </div>
         </div>
       </section>
