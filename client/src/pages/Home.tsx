@@ -95,9 +95,9 @@ export default function Home() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(20,20,30,0.4),rgba(5,5,5,1)_60%)] z-0" />
         
         <div className="container relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-[1.2fr_0.8fr] gap-8 items-center">
             {/* Left: Text Content */}
-            <div className="max-w-3xl relative z-20">
+            <div className="relative z-20">
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -114,7 +114,7 @@ export default function Home() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
-                className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-white mb-8 leading-tight"
+                className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-display font-bold text-white mb-8 leading-tight"
               >
                 <span className="inline-block whitespace-nowrap">国内最高峰の「知」に、</span><br />
                 <span className="inline-block whitespace-nowrap">世界最先端の「武器」を。</span>
@@ -158,7 +158,7 @@ export default function Home() {
                 initial={{ opacity: 0, x: 100 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-                className="absolute top-1/2 -translate-y-1/2 left-[20%] w-[160%] rounded-xl overflow-hidden shadow-2xl border border-white/10 bg-black z-10"
+                className="absolute top-1/2 -translate-y-1/2 left-[10%] w-[180%] rounded-xl overflow-hidden shadow-2xl border border-white/10 bg-black z-10"
               >
                 <div className="h-8 bg-[#0a0a0a] flex items-center px-4 gap-2 border-b border-white/5">
                   <div className="w-2 h-2 rounded-full bg-white/20" />
