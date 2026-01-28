@@ -150,39 +150,41 @@ export default function Home() {
               </motion.p>
             </div>
 
-            {/* Right: Product Visuals */}
-            <div className="relative hidden lg:block h-[600px]">
-              {/* PC Frame */}
-              <motion.div
-                initial={{ opacity: 0, y: 50, rotateX: 10 }}
-                animate={{ opacity: 1, y: 0, rotateX: 0 }}
-                transition={{ duration: 1, delay: 0.4, ease: "easeOut" }}
-                className="absolute top-10 left-0 w-[640px] rounded-xl overflow-hidden shadow-2xl border border-white/10 bg-black z-10"
-                style={{ perspective: "1000px" }}
-              >
-                <div className="h-6 bg-[#1a1a1a] flex items-center px-4 gap-2 border-b border-white/5">
-                  <div className="w-2 h-2 rounded-full bg-red-500/50" />
-                  <div className="w-2 h-2 rounded-full bg-yellow-500/50" />
-                  <div className="w-2 h-2 rounded-full bg-green-500/50" />
-                </div>
-                <img src="/images/app-screen-pc.png" alt="The Global Resilience Hub Dashboard" className="w-full h-auto opacity-90" />
-                {/* Reflection Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-transparent pointer-events-none" />
-              </motion.div>
+            {/* Right: Product Visuals - Dynamic Overflow Layout */}
+            <div className="relative hidden lg:block h-[800px] w-full max-w-none">
+              <div className="absolute top-1/2 left-20 -translate-y-1/2 w-[140vw] min-w-[1200px]">
+                {/* PC Frame - Massive & Cropped */}
+                <motion.div
+                  initial={{ opacity: 0, x: 100, rotateY: -5 }}
+                  animate={{ opacity: 1, x: 0, rotateY: 0 }}
+                  transition={{ duration: 1.2, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
+                  className="absolute top-0 left-0 w-[85%] rounded-xl overflow-hidden shadow-2xl border border-white/10 bg-black z-10 origin-left"
+                  style={{ perspective: "2000px", transformStyle: "preserve-3d" }}
+                >
+                  <div className="h-8 bg-[#1a1a1a] flex items-center px-6 gap-3 border-b border-white/5">
+                    <div className="w-3 h-3 rounded-full bg-red-500/50" />
+                    <div className="w-3 h-3 rounded-full bg-yellow-500/50" />
+                    <div className="w-3 h-3 rounded-full bg-green-500/50" />
+                  </div>
+                  <img src="/images/app-screen-pc.png" alt="The Global Resilience Hub Dashboard" className="w-full h-auto opacity-95" />
+                  {/* Reflection Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-tr from-white/10 via-transparent to-transparent pointer-events-none" />
+                </motion.div>
 
-              {/* Mobile Frame */}
-              <motion.div
-                initial={{ opacity: 0, y: 100, x: 20 }}
-                animate={{ opacity: 1, y: 40, x: 0 }}
-                transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
-                className="absolute bottom-0 right-10 w-[200px] rounded-[2rem] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] border-[6px] border-[#1a1a1a] bg-black z-20"
-              >
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-20 h-6 bg-[#1a1a1a] rounded-b-xl z-30" />
-                <img src="/images/app-screen-mobile.png" alt="The Global Resilience Hub Mobile" className="w-full h-auto" />
-              </motion.div>
-              
-              {/* Glow Effect behind devices */}
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/20 blur-[100px] rounded-full -z-10" />
+                {/* Mobile Frame - Floating in front */}
+                <motion.div
+                  initial={{ opacity: 0, y: 100, x: 50 }}
+                  animate={{ opacity: 1, y: 60, x: 0 }}
+                  transition={{ duration: 1.2, delay: 0.6, ease: [0.22, 1, 0.36, 1] }}
+                  className="absolute bottom-[-50px] left-[5%] w-[22%] max-w-[320px] rounded-[2.5rem] overflow-hidden shadow-[0_30px_80px_rgba(0,0,0,0.6)] border-[8px] border-[#1a1a1a] bg-black z-20"
+                >
+                  <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-7 bg-[#1a1a1a] rounded-b-2xl z-30" />
+                  <img src="/images/app-screen-mobile.png" alt="The Global Resilience Hub Mobile" className="w-full h-auto" />
+                </motion.div>
+                
+                {/* Glow Effect behind devices */}
+                <div className="absolute top-1/2 left-[20%] -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-primary/15 blur-[120px] rounded-full -z-10" />
+              </div>
             </div>
           </div>
         </div>
