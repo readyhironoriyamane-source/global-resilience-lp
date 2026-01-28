@@ -152,13 +152,13 @@ export default function Home() {
             </div>
 
             {/* Right: Product Visuals - Premium Static Style */}
-            <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[65%] h-[80vh] hidden lg:block pointer-events-none">
-              {/* PC Frame - Positioned to bleed off right edge */}
+            <div className="relative hidden lg:block h-[600px]">
+              {/* PC Frame - Positioned to bleed off right edge but contained in grid column */}
               <motion.div
                 initial={{ opacity: 0, x: 100 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-                className="absolute right-[-10%] top-1/2 -translate-y-1/2 w-[110%] rounded-xl overflow-hidden shadow-2xl border border-white/10 bg-black z-10"
+                className="absolute top-1/2 -translate-y-1/2 left-20 w-[140%] rounded-xl overflow-hidden shadow-2xl border border-white/10 bg-black z-10"
               >
                 <div className="h-8 bg-[#0a0a0a] flex items-center px-4 gap-2 border-b border-white/5">
                   <div className="w-2 h-2 rounded-full bg-white/20" />
@@ -171,12 +171,12 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/40 pointer-events-none" />
               </motion.div>
 
-              {/* Mobile Frame - Overlapping PC frame */}
+              {/* Mobile Frame - Positioned to not overlap PC too much */}
               <motion.div
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1.2, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-                className="absolute bottom-[10%] left-[5%] w-[240px] rounded-[2.5rem] overflow-hidden shadow-[0_30px_80px_rgba(0,0,0,0.8)] border-[8px] border-[#0a0a0a] bg-black z-20"
+                className="absolute bottom-0 left-0 w-[220px] rounded-[2.5rem] overflow-hidden shadow-[0_30px_80px_rgba(0,0,0,0.8)] border-[8px] border-[#0a0a0a] bg-black z-20"
               >
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-7 bg-[#0a0a0a] rounded-b-xl z-30" />
                 <img src="/images/app-screen-mobile.png" alt="The Global Resilience Hub Mobile" className="w-full h-auto" />
