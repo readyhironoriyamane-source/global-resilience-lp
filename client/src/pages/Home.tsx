@@ -246,7 +246,9 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8">
             <TechCard delay={0}>
               <div className="h-1 bg-primary w-12 mb-8" />
-              <LayoutDashboard className="w-10 h-10 text-white mb-6" />
+              <div className="mb-6 relative w-24 h-24 -ml-4">
+                <img src="/images/feature-ai-iso.png" alt="AI Intelligence" className="w-full h-full object-contain drop-shadow-[0_0_15px_rgba(56,189,248,0.5)]" />
+              </div>
               <h3 className="text-2xl font-display font-bold text-white mb-2">AI Intelligence</h3>
               <p className="text-sm font-bold text-primary mb-4">情報の構造化</p>
               <h4 className="text-lg font-bold text-white mb-4">世界中のニュース・論文を、AIが「使える情報」に。</h4>
@@ -257,7 +259,9 @@ export default function Home() {
 
             <TechCard delay={0.2}>
               <div className="h-1 bg-primary w-12 mb-8" />
-              <Users className="w-10 h-10 text-white mb-6" />
+              <div className="mb-6 relative w-24 h-24 -ml-4">
+                <img src="/images/feature-community-iso.png" alt="Community & Thread" className="w-full h-full object-contain drop-shadow-[0_0_15px_rgba(56,189,248,0.5)]" />
+              </div>
               <h3 className="text-2xl font-display font-bold text-white mb-2">Community & Thread</h3>
               <p className="text-sm font-bold text-primary mb-4">知の共有</p>
               <h4 className="text-lg font-bold text-white mb-4">教科書にはない「現場のリアル」がここにある。</h4>
@@ -268,7 +272,9 @@ export default function Home() {
 
             <TechCard delay={0.4}>
               <div className="h-1 bg-primary w-12 mb-8" />
-              <ShoppingBag className="w-10 h-10 text-white mb-6" />
+              <div className="mb-6 relative w-24 h-24 -ml-4">
+                <img src="/images/feature-marketplace-iso.png" alt="Solution Marketplace" className="w-full h-full object-contain drop-shadow-[0_0_15px_rgba(56,189,248,0.5)]" />
+              </div>
               <h3 className="text-2xl font-display font-bold text-white mb-2">Solution Marketplace</h3>
               <p className="text-sm font-bold text-primary mb-4">技術の実装</p>
               <h4 className="text-lg font-bold text-white mb-4">課題解決の技術と出会い、即座に導入する。</h4>
