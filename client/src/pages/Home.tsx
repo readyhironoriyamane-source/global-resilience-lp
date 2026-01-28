@@ -94,10 +94,8 @@ export default function Home() {
         {/* Deep Black Background with Subtle Spotlight */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(20,20,30,0.4),rgba(5,5,5,1)_60%)] z-0" />
         
-        <div className="container relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left: Text Content */}
-            <div className="max-w-3xl relative z-20">
+        <div className="container relative z-10 h-full flex items-center">
+          <div className="w-full max-w-4xl relative z-20">
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -114,10 +112,9 @@ export default function Home() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
-                className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-white mb-8 leading-tight"
+                className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-display font-bold text-white mb-8 leading-tight tracking-tight"
               >
-                <span className="inline-block whitespace-nowrap">国内最高峰の「知」に、</span><br />
-                <span className="inline-block whitespace-nowrap">世界最先端の「武器」を。</span>
+                <span className="inline-block whitespace-nowrap">国内最高峰の「知」に、世界最先端の「武器」を。</span>
               </motion.h1>
               
               <motion.p
@@ -151,39 +148,43 @@ export default function Home() {
               </motion.p>
             </div>
 
-            {/* Right: Product Visuals - Premium Static Style */}
-            <div className="relative hidden lg:block h-[600px]">
-              {/* PC Frame - Positioned to bleed off right edge but contained in grid column */}
-              <motion.div
-                initial={{ opacity: 0, x: 100 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-                className="absolute top-1/2 -translate-y-1/2 left-20 w-[140%] rounded-xl overflow-hidden shadow-2xl border border-white/10 bg-black z-10"
-              >
-                <div className="h-8 bg-[#0a0a0a] flex items-center px-4 gap-2 border-b border-white/5">
-                  <div className="w-2 h-2 rounded-full bg-white/20" />
-                  <div className="w-2 h-2 rounded-full bg-white/20" />
-                  <div className="w-2 h-2 rounded-full bg-white/20" />
-                </div>
-                <img src="/images/app-screen-pc.png" alt="The Global Resilience Hub Dashboard" className="w-full h-auto opacity-90" />
-                {/* Premium Reflection Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-tr from-white/5 via-transparent to-transparent pointer-events-none" />
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/40 pointer-events-none" />
-              </motion.div>
+          </div>
 
-              {/* Mobile Frame - Positioned to not overlap PC too much */}
-              <motion.div
-                initial={{ opacity: 0, y: 50 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1.2, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-                className="absolute bottom-0 left-0 w-[220px] rounded-[2.5rem] overflow-hidden shadow-[0_30px_80px_rgba(0,0,0,0.8)] border-[8px] border-[#0a0a0a] bg-black z-20"
-              >
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-7 bg-[#0a0a0a] rounded-b-xl z-30" />
-                <img src="/images/app-screen-mobile.png" alt="The Global Resilience Hub Mobile" className="w-full h-auto" />
-                {/* Mobile Reflection */}
-                <div className="absolute inset-0 bg-gradient-to-tr from-white/10 to-transparent pointer-events-none" />
-              </motion.div>
-            </div>
+        {/* Background Visuals - Absolute Positioned behind text */}
+        <div className="absolute top-0 right-0 w-[65%] h-full hidden lg:block z-0 pointer-events-none overflow-hidden">
+          <div className="relative w-full h-full">
+            {/* PC Frame - Positioned to bleed off right edge */}
+            <motion.div
+              initial={{ opacity: 0, x: 100 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
+              className="absolute top-1/2 -translate-y-1/2 left-[10%] w-[140%] rounded-xl overflow-hidden shadow-2xl border border-white/10 bg-black"
+            >
+              <div className="h-8 bg-[#0a0a0a] flex items-center px-4 gap-2 border-b border-white/5">
+                <div className="w-2 h-2 rounded-full bg-white/20" />
+                <div className="w-2 h-2 rounded-full bg-white/20" />
+                <div className="w-2 h-2 rounded-full bg-white/20" />
+              </div>
+              <img src="/images/app-screen-pc.png" alt="The Global Resilience Hub Dashboard" className="w-full h-auto opacity-60" />
+              {/* Premium Reflection Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-tr from-white/5 via-transparent to-transparent pointer-events-none" />
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/40 pointer-events-none" />
+              {/* Fade out to left to blend with text area - Enhanced for readability */}
+              <div className="absolute inset-y-0 left-0 w-2/3 bg-gradient-to-r from-[#050505] via-[#050505]/80 to-transparent pointer-events-none" />
+            </motion.div>
+
+            {/* Mobile Frame */}
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1.2, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
+              className="absolute bottom-[10%] left-0 w-[220px] rounded-[2.5rem] overflow-hidden shadow-[0_30px_80px_rgba(0,0,0,0.8)] border-[8px] border-[#0a0a0a] bg-black"
+            >
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-7 bg-[#0a0a0a] rounded-b-xl z-30" />
+              <img src="/images/app-screen-mobile.png" alt="The Global Resilience Hub Mobile" className="w-full h-auto opacity-80" />
+              {/* Mobile Reflection */}
+              <div className="absolute inset-0 bg-gradient-to-tr from-white/10 to-transparent pointer-events-none" />
+            </motion.div>
           </div>
         </div>
         
