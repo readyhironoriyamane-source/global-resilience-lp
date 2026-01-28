@@ -114,7 +114,8 @@ export default function Home() {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-display font-bold text-white mb-8 leading-tight tracking-tight"
               >
-                <span className="inline-block whitespace-nowrap">国内最高峰の「知」に、世界最先端の「武器」を。</span>
+                <span className="inline-block whitespace-nowrap">国内最高峰の「知」に、</span><br />
+                <span className="inline-block whitespace-nowrap">世界最先端の「武器」を。</span>
               </motion.h1>
               
               <motion.p
