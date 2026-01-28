@@ -94,63 +94,101 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/50 to-background z-0" />
         
         <div className="container relative z-10">
-          <div className="max-w-5xl">
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              className="flex items-center gap-4 mb-8"
-            >
-              <span className="h-[1px] w-12 bg-primary" />
-              <span className="font-mono text-primary text-sm font-bold tracking-widest uppercase">
-                System Online / Ver. 6.0
-              </span>
-            </motion.div>
-            
-            <motion.h1
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-white mb-8 leading-tight"
-            >
-              国内最高峰の「知」に、<br />
-              世界最先端の「武器」を。
-            </motion.h1>
-            
-            <motion.p
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-xl md:text-2xl text-muted-foreground max-w-3xl mb-12 leading-relaxed"
-            >
-              一般社団法人 The Global Resilience Summit は進化します。<br />
-              会員限定のAI防災プラットフォーム<strong className="text-white font-bold">「The Global Resilience Hub」</strong>、標準搭載開始。
-            </motion.p>
-            
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
-              className="flex flex-col sm:flex-row gap-4"
-            >
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white font-bold text-lg px-10 h-16 rounded-none shadow-[0_0_30px_rgba(var(--primary),0.3)]">
-                Summitに入会し、Hubを利用する
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
-            </motion.div>
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.8, delay: 0.8 }}
-              className="mt-4 text-sm text-muted-foreground font-mono"
-            >
-              ※月額換算 50,000円〜
-            </motion.p>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left: Text Content */}
+            <div className="max-w-2xl">
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8 }}
+                className="flex items-center gap-4 mb-8"
+              >
+                <span className="h-[1px] w-12 bg-primary" />
+                <span className="font-mono text-primary text-sm font-bold tracking-widest uppercase">
+                  System Online / Ver. 7.0
+                </span>
+              </motion.div>
+              
+              <motion.h1
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-white mb-8 leading-tight"
+              >
+                国内最高峰の「知」に、<br />
+                世界最先端の「武器」を。
+              </motion.h1>
+              
+              <motion.p
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                className="text-xl md:text-2xl text-muted-foreground mb-12 leading-relaxed"
+              >
+                一般社団法人 The Global Resilience Summit は進化します。<br />
+                会員限定のAI防災プラットフォーム<strong className="text-white font-bold">「The Global Resilience Hub」</strong>、標準搭載開始。
+              </motion.p>
+              
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
+                className="flex flex-col sm:flex-row gap-4"
+              >
+                <Button size="lg" className="bg-primary hover:bg-primary/90 text-white font-bold text-lg px-10 h-16 rounded-none shadow-[0_0_30px_rgba(var(--primary),0.3)]">
+                  Summitに入会し、Hubを利用する
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </Button>
+              </motion.div>
+              <motion.p
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.8, delay: 0.8 }}
+                className="mt-4 text-sm text-muted-foreground font-mono"
+              >
+                ※月額換算 50,000円〜
+              </motion.p>
+            </div>
+
+            {/* Right: Product Visuals */}
+            <div className="relative hidden lg:block h-[600px]">
+              {/* PC Frame */}
+              <motion.div
+                initial={{ opacity: 0, y: 50, rotateX: 10 }}
+                animate={{ opacity: 1, y: 0, rotateX: 0 }}
+                transition={{ duration: 1, delay: 0.4, ease: "easeOut" }}
+                className="absolute top-10 left-0 w-[640px] rounded-xl overflow-hidden shadow-2xl border border-white/10 bg-black z-10"
+                style={{ perspective: "1000px" }}
+              >
+                <div className="h-6 bg-[#1a1a1a] flex items-center px-4 gap-2 border-b border-white/5">
+                  <div className="w-2 h-2 rounded-full bg-red-500/50" />
+                  <div className="w-2 h-2 rounded-full bg-yellow-500/50" />
+                  <div className="w-2 h-2 rounded-full bg-green-500/50" />
+                </div>
+                <img src="/images/app-screen-pc.png" alt="The Global Resilience Hub Dashboard" className="w-full h-auto opacity-90" />
+                {/* Reflection Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-transparent pointer-events-none" />
+              </motion.div>
+
+              {/* Mobile Frame */}
+              <motion.div
+                initial={{ opacity: 0, y: 100, x: 20 }}
+                animate={{ opacity: 1, y: 40, x: 0 }}
+                transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
+                className="absolute bottom-0 right-10 w-[200px] rounded-[2rem] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] border-[6px] border-[#1a1a1a] bg-black z-20"
+              >
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-20 h-6 bg-[#1a1a1a] rounded-b-xl z-30" />
+                <img src="/images/app-screen-mobile.png" alt="The Global Resilience Hub Mobile" className="w-full h-auto" />
+              </motion.div>
+              
+              {/* Glow Effect behind devices */}
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/20 blur-[100px] rounded-full -z-10" />
+            </div>
           </div>
         </div>
 
         {/* Abstract Globe/Data Visualization Background */}
-        <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[800px] h-[800px] opacity-20 pointer-events-none">
+        <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[800px] h-[800px] opacity-20 pointer-events-none -z-10">
            <div className="absolute inset-0 border border-primary/30 rounded-full animate-[spin_60s_linear_infinite]" />
            <div className="absolute inset-[100px] border border-white/10 rounded-full animate-[spin_40s_linear_infinite_reverse]" />
            <div className="absolute inset-[200px] border border-primary/20 rounded-full animate-[spin_20s_linear_infinite]" />
