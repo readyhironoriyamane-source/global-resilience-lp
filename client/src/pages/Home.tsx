@@ -90,13 +90,14 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-grid">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/50 to-background z-0" />
+      <section className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-[#050505]">
+        {/* Deep Black Background with Subtle Spotlight */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(20,20,30,0.4),rgba(5,5,5,1)_60%)] z-0" />
         
         <div className="container relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left: Text Content */}
-            <div className="max-w-2xl">
+            <div className="max-w-2xl relative z-20">
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -150,48 +151,40 @@ export default function Home() {
               </motion.p>
             </div>
 
-            {/* Right: Product Visuals */}
-            <div className="relative hidden lg:block h-[600px]">
-              {/* PC Frame */}
+            {/* Right: Product Visuals - Premium Static Style */}
+            <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[65%] h-[80vh] hidden lg:block pointer-events-none">
+              {/* PC Frame - Positioned to bleed off right edge */}
               <motion.div
-                initial={{ opacity: 0, y: 50, rotateX: 10 }}
-                animate={{ opacity: 1, y: 0, rotateX: 0 }}
-                transition={{ duration: 1, delay: 0.4, ease: "easeOut" }}
-                className="absolute top-10 left-0 w-[640px] rounded-xl overflow-hidden shadow-2xl border border-white/10 bg-black z-10"
-                style={{ perspective: "1000px" }}
+                initial={{ opacity: 0, x: 100 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
+                className="absolute right-[-10%] top-1/2 -translate-y-1/2 w-[110%] rounded-xl overflow-hidden shadow-2xl border border-white/10 bg-black z-10"
               >
-                <div className="h-6 bg-[#1a1a1a] flex items-center px-4 gap-2 border-b border-white/5">
-                  <div className="w-2 h-2 rounded-full bg-red-500/50" />
-                  <div className="w-2 h-2 rounded-full bg-yellow-500/50" />
-                  <div className="w-2 h-2 rounded-full bg-green-500/50" />
+                <div className="h-8 bg-[#0a0a0a] flex items-center px-4 gap-2 border-b border-white/5">
+                  <div className="w-2 h-2 rounded-full bg-white/20" />
+                  <div className="w-2 h-2 rounded-full bg-white/20" />
+                  <div className="w-2 h-2 rounded-full bg-white/20" />
                 </div>
                 <img src="/images/app-screen-pc.png" alt="The Global Resilience Hub Dashboard" className="w-full h-auto opacity-90" />
-                {/* Reflection Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-transparent pointer-events-none" />
+                {/* Premium Reflection Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-tr from-white/5 via-transparent to-transparent pointer-events-none" />
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/40 pointer-events-none" />
               </motion.div>
 
-              {/* Mobile Frame */}
+              {/* Mobile Frame - Overlapping PC frame */}
               <motion.div
-                initial={{ opacity: 0, y: 100, x: 20 }}
-                animate={{ opacity: 1, y: 40, x: 0 }}
-                transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
-                className="absolute bottom-0 right-10 w-[200px] rounded-[2rem] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] border-[6px] border-[#1a1a1a] bg-black z-20"
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1.2, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
+                className="absolute bottom-[10%] left-[5%] w-[240px] rounded-[2.5rem] overflow-hidden shadow-[0_30px_80px_rgba(0,0,0,0.8)] border-[8px] border-[#0a0a0a] bg-black z-20"
               >
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-20 h-6 bg-[#1a1a1a] rounded-b-xl z-30" />
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-7 bg-[#0a0a0a] rounded-b-xl z-30" />
                 <img src="/images/app-screen-mobile.png" alt="The Global Resilience Hub Mobile" className="w-full h-auto" />
+                {/* Mobile Reflection */}
+                <div className="absolute inset-0 bg-gradient-to-tr from-white/10 to-transparent pointer-events-none" />
               </motion.div>
-              
-              {/* Glow Effect behind devices */}
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/20 blur-[100px] rounded-full -z-10" />
             </div>
           </div>
-        </div>
-
-        {/* Abstract Globe/Data Visualization Background */}
-        <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[800px] h-[800px] opacity-20 pointer-events-none -z-10">
-           <div className="absolute inset-0 border border-primary/30 rounded-full animate-[spin_60s_linear_infinite]" />
-           <div className="absolute inset-[100px] border border-white/10 rounded-full animate-[spin_40s_linear_infinite_reverse]" />
-           <div className="absolute inset-[200px] border border-primary/20 rounded-full animate-[spin_20s_linear_infinite]" />
         </div>
         
         <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
