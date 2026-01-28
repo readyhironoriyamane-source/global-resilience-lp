@@ -48,73 +48,72 @@
 }
 
 :root {
-  /* Ver.2 Theme: Trust & Clarity (Deep Navy & White) */
-  --background: oklch(0.15 0.04 260); /* Deep Navy Blue #0a192f approx - Trustworthy base */
-  --foreground: oklch(0.98 0 0); /* Pure White - Maximum readability */
+  /* Ver.3 Theme: Kinetic Future (Deep Space & Aurora) */
+  --background: oklch(0.05 0.02 240); /* Almost Black Blue */
+  --foreground: oklch(0.98 0 0);
   
-  --primary: oklch(0.65 0.18 240); /* Clear Blue - Actionable & Safe */
-  --primary-foreground: oklch(0.98 0 0);
+  --primary: oklch(0.7 0.15 220); /* Electric Blue */
+  --primary-foreground: oklch(0.05 0.02 240);
   
-  --secondary: oklch(0.25 0.05 260); /* Lighter Navy for contrast */
-  --secondary-foreground: oklch(0.95 0 0);
+  --secondary: oklch(0.15 0.05 240);
+  --secondary-foreground: oklch(0.98 0 0);
   
-  --muted: oklch(0.3 0.05 260);
-  --muted-foreground: oklch(0.8 0.02 260); /* High contrast gray for secondary text */
+  --muted: oklch(0.2 0.03 240);
+  --muted-foreground: oklch(0.7 0.02 240);
   
-  --accent: oklch(0.35 0.08 240);
+  --accent: oklch(0.25 0.05 220);
   --accent-foreground: oklch(0.98 0 0);
   
   --destructive: oklch(0.6 0.2 20);
   --destructive-foreground: oklch(0.98 0 0);
   
-  --border: oklch(0.3 0.05 260);
-  --input: oklch(0.25 0.05 260);
-  --ring: oklch(0.65 0.18 240);
+  --border: oklch(0.2 0.03 240);
+  --input: oklch(0.2 0.03 240);
+  --ring: oklch(0.7 0.15 220);
   
-  --card: oklch(0.2 0.04 260); /* Distinct card background */
+  --card: oklch(0.1 0.03 240);
   --card-foreground: oklch(0.98 0 0);
   
-  --popover: oklch(0.2 0.04 260);
+  --popover: oklch(0.1 0.03 240);
   --popover-foreground: oklch(0.98 0 0);
   
-  --radius: 0.25rem; /* Slight rounding for approachability */
+  --radius: 1rem; /* Modern rounded corners */
   
-  --chart-1: oklch(0.65 0.18 240);
+  --chart-1: oklch(0.7 0.15 220);
   --chart-2: oklch(0.6 0.15 250);
   --chart-3: oklch(0.5 0.15 270);
   --chart-4: oklch(0.4 0.15 290);
   --chart-5: oklch(0.3 0.15 310);
   
-  --sidebar: oklch(0.15 0.04 260);
+  --sidebar: oklch(0.1 0.03 240);
   --sidebar-foreground: oklch(0.98 0 0);
-  --sidebar-primary: oklch(0.65 0.18 240);
-  --sidebar-primary-foreground: oklch(0.98 0 0);
-  --sidebar-accent: oklch(0.25 0.05 260);
+  --sidebar-primary: oklch(0.7 0.15 220);
+  --sidebar-primary-foreground: oklch(0.05 0.02 240);
+  --sidebar-accent: oklch(0.2 0.03 240);
   --sidebar-accent-foreground: oklch(0.98 0 0);
-  --sidebar-border: oklch(0.3 0.05 260);
-  --sidebar-ring: oklch(0.65 0.18 240);
+  --sidebar-border: oklch(0.2 0.03 240);
+  --sidebar-ring: oklch(0.7 0.15 220);
 }
 
-/* Force Dark Mode always for this specific design */
 .dark {
-  --background: oklch(0.15 0.04 260);
+  --background: oklch(0.05 0.02 240);
   --foreground: oklch(0.98 0 0);
-  --primary: oklch(0.65 0.18 240);
-  --primary-foreground: oklch(0.98 0 0);
-  --secondary: oklch(0.25 0.05 260);
-  --secondary-foreground: oklch(0.95 0 0);
-  --muted: oklch(0.3 0.05 260);
-  --muted-foreground: oklch(0.8 0.02 260);
-  --accent: oklch(0.35 0.08 240);
+  --primary: oklch(0.7 0.15 220);
+  --primary-foreground: oklch(0.05 0.02 240);
+  --secondary: oklch(0.15 0.05 240);
+  --secondary-foreground: oklch(0.98 0 0);
+  --muted: oklch(0.2 0.03 240);
+  --muted-foreground: oklch(0.7 0.02 240);
+  --accent: oklch(0.25 0.05 220);
   --accent-foreground: oklch(0.98 0 0);
   --destructive: oklch(0.6 0.2 20);
   --destructive-foreground: oklch(0.98 0 0);
-  --border: oklch(0.3 0.05 260);
-  --input: oklch(0.25 0.05 260);
-  --ring: oklch(0.65 0.18 240);
-  --card: oklch(0.2 0.04 260);
+  --border: oklch(0.2 0.03 240);
+  --input: oklch(0.2 0.03 240);
+  --ring: oklch(0.7 0.15 220);
+  --card: oklch(0.1 0.03 240);
   --card-foreground: oklch(0.98 0 0);
-  --popover: oklch(0.2 0.04 260);
+  --popover: oklch(0.1 0.03 240);
   --popover-foreground: oklch(0.98 0 0);
 }
 
@@ -124,9 +123,6 @@
   }
   body {
     @apply bg-background text-foreground font-sans antialiased selection:bg-primary/30 selection:text-primary-foreground;
-    /* Subtle, professional gradient instead of "Abyss" */
-    background-image: 
-      linear-gradient(to bottom, oklch(0.12 0.04 260), oklch(0.15 0.04 260));
   }
   
   h1, h2, h3, h4, h5, h6 {
@@ -135,13 +131,13 @@
   
   /* Custom Scrollbar */
   ::-webkit-scrollbar {
-    width: 8px;
+    width: 6px;
   }
   ::-webkit-scrollbar-track {
     @apply bg-background;
   }
   ::-webkit-scrollbar-thumb {
-    @apply bg-muted rounded-full hover:bg-muted-foreground/50 transition-colors;
+    @apply bg-white/10 rounded-full hover:bg-white/20 transition-colors;
   }
 }
 
@@ -170,18 +166,37 @@
     .container {
       padding-left: 2rem;
       padding-right: 2rem;
-      max-width: 1280px; /* Standard width for better readability */
+      max-width: 1400px;
     }
   }
   
-  /* Removed text-glow and excessive effects for clarity */
-  
-  .glass-panel {
-    @apply bg-card/80 backdrop-blur-md border border-white/10 shadow-lg;
+  /* Noise Texture */
+  .bg-noise {
+    position: relative;
+  }
+  .bg-noise::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  /* Aurora Gradient */
+  .aurora-gradient {
+    background: radial-gradient(circle at 50% -20%, oklch(0.3 0.1 220 / 0.4), transparent 50%),
+                radial-gradient(circle at 0% 50%, oklch(0.2 0.1 260 / 0.3), transparent 40%),
+                radial-gradient(circle at 100% 50%, oklch(0.2 0.1 180 / 0.3), transparent 40%);
   }
   
-  /* Clearer text hierarchy */
-  .text-balance {
-    text-wrap: balance;
+  /* Bento Grid Card */
+  .bento-card {
+    @apply bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl overflow-hidden transition-all duration-500 hover:border-white/20 hover:bg-white/10;
+  }
+  
+  /* Spotlight Effect */
+  .spotlight {
+    background: radial-gradient(600px circle at var(--mouse-x) var(--mouse-y), rgba(255,255,255,0.06), transparent 40%);
   }
 }
