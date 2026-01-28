@@ -301,7 +301,7 @@ export default function Home() {
             <div className="grid md:grid-cols-2 gap-8 items-stretch mb-12">
               {/* Old Model */}
               <div className="p-8 border border-white/10 bg-white/5 opacity-60 flex flex-col">
-                <h3 className="text-xl font-bold text-muted-foreground mb-6">これまでの協会</h3>
+                <h3 className="text-xl font-bold text-muted-foreground mb-6">これまで</h3>
                 <ul className="space-y-4 mb-8 flex-grow">
                   <li className="flex items-center gap-3 text-muted-foreground">
                     <CheckCircle2 className="w-5 h-5" />
@@ -318,7 +318,7 @@ export default function Home() {
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-white text-xs font-bold px-4 py-1 uppercase tracking-wider">
                   The New Standard
                 </div>
-                <h3 className="text-xl font-bold text-white mb-6">これからの協会</h3>
+                <h3 className="text-xl font-bold text-white mb-6">これから</h3>
                 <ul className="space-y-4 mb-8 flex-grow">
                   <li className="flex items-center gap-3 text-white">
                     <CheckCircle2 className="w-5 h-5 text-primary" />
