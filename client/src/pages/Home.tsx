@@ -114,8 +114,8 @@ export default function Home() {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-display font-bold text-white mb-8 leading-tight tracking-tight"
               >
-                <span className="inline-block whitespace-nowrap">国内最高峰の「知」に、</span><br />
-                <span className="inline-block whitespace-nowrap">世界最先端の「武器」を。</span>
+                <span className="inline-block">防災担当者の「困った」を、</span><br />
+                <span className="inline-block">AIとコミュニティで解決する。</span>
               </motion.h1>
               
               <motion.p
@@ -124,8 +124,8 @@ export default function Home() {
                 transition={{ duration: 0.8, delay: 0.4 }}
                 className="text-xl md:text-2xl text-muted-foreground mb-12 leading-relaxed"
               >
-                一般社団法人 The Global Resilience Summit は進化します。<br />
-                会員限定のAI防災プラットフォーム<strong className="text-white font-bold">「The Global Resilience Hub」</strong>、標準搭載開始。
+                月5万円。アルバイト1人分のコストで、<br />
+                全国の知識・専門家・最新情報が手に入る。
               </motion.p>
               
               <motion.div
@@ -135,7 +135,7 @@ export default function Home() {
                 className="flex flex-col sm:flex-row gap-4"
               >
                 <Button size="lg" className="bg-primary hover:bg-primary/90 text-white font-bold text-lg px-10 h-16 rounded-none shadow-[0_0_30px_rgba(var(--primary),0.3)]">
-                  Summitに入会し、Hubを利用する
+                  まず無料デモを見る（3分でわかります）
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
               </motion.div>
@@ -166,7 +166,7 @@ export default function Home() {
                 <div className="w-2 h-2 rounded-full bg-white/20" />
                 <div className="w-2 h-2 rounded-full bg-white/20" />
               </div>
-              <img src="/images/app-screen-pc.png" alt="The Global Resilience Hub Dashboard" className="w-full h-auto opacity-60" />
+              <img src="https://files.manuscdn.com/user_upload_by_module/session_file/92549119/tfxfKpNoSNKWqGCm.png" alt="The Global Resilience Hub Dashboard" className="w-full h-auto opacity-60" />
               {/* Premium Reflection Overlay */}
               <div className="absolute inset-0 bg-gradient-to-tr from-white/5 via-transparent to-transparent pointer-events-none" />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/40 pointer-events-none" />
@@ -182,7 +182,7 @@ export default function Home() {
               className="absolute bottom-[10%] left-0 w-[220px] rounded-[2.5rem] overflow-hidden shadow-[0_30px_80px_rgba(0,0,0,0.8)] border-[8px] border-[#0a0a0a] bg-black"
             >
               <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-7 bg-[#0a0a0a] rounded-b-xl z-30" />
-              <img src="/images/app-screen-mobile.png" alt="The Global Resilience Hub Mobile" className="w-full h-auto opacity-80" />
+              <img src="https://files.manuscdn.com/user_upload_by_module/session_file/92549119/CJsWzHwtaALyIkbP.png" alt="The Global Resilience Hub Mobile" className="w-full h-auto opacity-80" />
               {/* Mobile Reflection */}
               <div className="absolute inset-0 bg-gradient-to-tr from-white/10 to-transparent pointer-events-none" />
             </motion.div>
@@ -202,18 +202,16 @@ export default function Home() {
               <SectionHeading 
                 align="left"
                 subtitle="THE PROBLEM"
-                title={<>防災担当者のデスクは、<br />なぜ<span className="text-primary">「孤独」</span>なのか。</>}
+                title={<>こんな悩み、<br />ありませんか？</>}
               />
               <div className="space-y-8">
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  災害は待ってくれません。しかし、対策に必要な情報は世界中に散らばり、言語の壁に阻まれ、現場のノウハウは個人の頭の中に眠ったままです。
-                </p>
                 <div className="pl-6 border-l-2 border-primary/30 space-y-4">
-                  <p className="text-xl font-bold text-white">「検索しても、正解が見つからない」</p>
-                  <p className="text-xl font-bold text-white">「他社がどう動いているか、聞ける相手がいない」</p>
+                  <p className="text-xl font-bold text-white">・最新の防災情報、どこで調べればいいかわからない</p>
+                  <p className="text-xl font-bold text-white">・他の会社がどう対策しているか、聞ける相手がいない</p>
+                  <p className="text-xl font-bold text-white">・専門家に相談したいが、誰に頼めばいいかわからない</p>
                 </div>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  その情報の孤立を、テクノロジーとコミュニティの力で解決します。
+                <p className="text-2xl font-bold text-primary leading-relaxed mt-8">
+                  この3つ、全部解決します。
                 </p>
               </div>
             </div>
@@ -240,46 +238,43 @@ export default function Home() {
         <div className="container">
           <SectionHeading 
             subtitle="THE SOLUTION"
-            title={<>あなたの組織に<br />「防災のOS」をインストールする。<br /><span className="text-primary text-3xl md:text-4xl block mt-4">The Global Resilience Hub 3つの機能</span></>}
+            title={<>防災担当者に必要な情報・仲間・専門家が、<br />1か所に集まった。<br /><span className="text-primary text-3xl md:text-4xl block mt-4">The Global Resilience Hub 3つの機能</span></>}
           />
 
           <div className="grid md:grid-cols-3 gap-8">
             <TechCard delay={0}>
               <div className="h-1 bg-primary w-12 mb-8" />
               <div className="mb-6 relative w-24 h-24 -ml-4">
-                <img src="/images/feature-ai-iso.png" alt="AI Intelligence" className="w-full h-full object-contain drop-shadow-[0_0_15px_rgba(56,189,248,0.5)]" />
+                <img src="https://files.manuscdn.com/user_upload_by_module/session_file/92549119/wBOxemwXxzJYOndk.png" alt="AI Intelligence" className="w-full h-full object-contain drop-shadow-[0_0_15px_rgba(56,189,248,0.5)]" />
               </div>
               <h3 className="text-2xl font-display font-bold text-white mb-2">AI Intelligence</h3>
-              <p className="text-sm font-bold text-primary mb-4">情報の構造化</p>
-              <h4 className="text-lg font-bold text-white mb-4">世界中のニュース・論文を、AIが「使える情報」に。</h4>
+              <p className="text-sm font-bold text-primary mb-4">AIが毎日、世界の防災ニュースを日本語で要約</p>
               <p className="text-muted-foreground leading-relaxed">
-                国内外の膨大な防災データをAIが収集・分析。あなたの組織に必要な情報だけを、日本語で要約して毎朝お届けします。リサーチにかける時間は、もう必要ありません。
+                情報収集の時間をゼロにする。見落としも防ぐ。
               </p>
             </TechCard>
 
             <TechCard delay={0.2}>
               <div className="h-1 bg-primary w-12 mb-8" />
               <div className="mb-6 relative w-24 h-24 -ml-4">
-                <img src="/images/feature-community-iso.png" alt="Community & Thread" className="w-full h-full object-contain drop-shadow-[0_0_15px_rgba(56,189,248,0.5)]" />
+                <img src="https://files.manuscdn.com/user_upload_by_module/session_file/92549119/ZYsIEbJnjCrbsaQs.png" alt="Community & Thread" className="w-full h-full object-contain drop-shadow-[0_0_15px_rgba(56,189,248,0.5)]" />
               </div>
               <h3 className="text-2xl font-display font-bold text-white mb-2">Community & Thread</h3>
-              <p className="text-sm font-bold text-primary mb-4">知の共有</p>
-              <h4 className="text-lg font-bold text-white mb-4">教科書にはない「現場のリアル」がここにある。</h4>
+              <p className="text-sm font-bold text-primary mb-4">全国の防災担当者とつながれるコミュニティ</p>
               <p className="text-muted-foreground leading-relaxed">
-                Summitに集うエキスパートや、世界の防災担当者と繋がるクローズドなコミュニティ。検索では出てこない「失敗談」や「運用ルール」を、スレッド形式でいつでも質問・相談できます。
+                「うちだけ？」が「あるある」に変わる場所。
               </p>
             </TechCard>
 
             <TechCard delay={0.4}>
               <div className="h-1 bg-primary w-12 mb-8" />
               <div className="mb-6 relative w-24 h-24 -ml-4">
-                <img src="/images/feature-marketplace-iso.png" alt="Solution Marketplace" className="w-full h-full object-contain drop-shadow-[0_0_15px_rgba(56,189,248,0.5)]" />
+                <img src="https://files.manuscdn.com/user_upload_by_module/session_file/92549119/MgimVHIxdfPadSEe.png" alt="Solution Marketplace" className="w-full h-full object-contain drop-shadow-[0_0_15px_rgba(56,189,248,0.5)]" />
               </div>
               <h3 className="text-2xl font-display font-bold text-white mb-2">Solution Marketplace</h3>
-              <p className="text-sm font-bold text-primary mb-4">技術の実装</p>
-              <h4 className="text-lg font-bold text-white mb-4">課題解決の技術と出会い、即座に導入する。</h4>
+              <p className="text-sm font-bold text-primary mb-4">審査済みの防災サービス・専門家に相談できる場所</p>
               <p className="text-muted-foreground leading-relaxed">
-                防災テック企業の最新ソリューションが集結。事例を見るだけでなく、そのまま担当者と繋がり、商談や契約までスムーズに進められます。
+                信頼できる業者探しで、失敗しない。
               </p>
             </TechCard>
           </div>
@@ -294,22 +289,22 @@ export default function Home() {
             
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-6">
-                「Summit」への入会ひとつで、<br />すべてが手に入る。
+                専門家1人を雇うより安く、<br />100人分の知識が手に入る。
               </h2>
             </div>
 
             <div className="grid md:grid-cols-2 gap-8 items-stretch mb-12">
               {/* Old Model */}
               <div className="p-8 border border-white/10 bg-white/5 opacity-60 flex flex-col">
-                <h3 className="text-xl font-bold text-muted-foreground mb-6">これまで</h3>
+                <h3 className="text-xl font-bold text-muted-foreground mb-6">専門家・コンサル費用</h3>
                 <ul className="space-y-4 mb-8 flex-grow">
                   <li className="flex items-center gap-3 text-muted-foreground">
                     <CheckCircle2 className="w-5 h-5" />
-                    <span>定例会・カンファレンス参加（人脈・権威）</span>
+                    <span>スポット相談・顧問契約</span>
                   </li>
                 </ul>
                 <div className="pt-6 border-t border-white/10">
-                  <p className="text-2xl font-display font-bold text-muted-foreground">年額 60万円</p>
+                  <p className="text-2xl font-display font-bold text-muted-foreground">年間 60万円以上</p>
                 </div>
               </div>
 
@@ -318,34 +313,23 @@ export default function Home() {
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-white text-xs font-bold px-4 py-1 uppercase tracking-wider">
                   The New Standard
                 </div>
-                <h3 className="text-xl font-bold text-white mb-6">これから</h3>
+                <h3 className="text-xl font-bold text-white mb-6">The Global Resilience Hub</h3>
                 <ul className="space-y-4 mb-8 flex-grow">
                   <li className="flex items-center gap-3 text-white">
                     <CheckCircle2 className="w-5 h-5 text-primary" />
-                    <span>定例会・カンファレンス参加（人脈・権威）</span>
+                    <span>定例会・カンファレンス参加</span>
                   </li>
                   <li className="flex items-center gap-3 text-white bg-primary/10 p-3 -mx-3 border border-primary/20">
                     <Zap className="w-5 h-5 text-primary fill-current" />
-                    <span className="font-bold">The Global Resilience Hub フルアクセス（AI・実務）</span>
+                    <span className="font-bold">Hub フルアクセス（AI・コミュニティ）</span>
                   </li>
                 </ul>
                 <div className="pt-6 border-t border-white/10">
                   <div className="flex items-baseline gap-4">
-                    <p className="text-3xl font-display font-bold text-white">据え置き 年額 60万円</p>
+                    <p className="text-3xl font-display font-bold text-white">月額 5万円<span className="text-lg font-normal text-muted-foreground ml-2">（年間 60万円）</span></p>
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div className="text-center max-w-3xl mx-auto">
-              <p className="text-2xl md:text-3xl font-bold text-white mb-6 leading-tight">
-                月額換算、わずか5万円。<br />
-                アルバイト1人分のコストで、<br />
-                世界中の防災知見とAI、そして国内最高クラスのネットワークをあなたのチームに。
-              </p>
-              <p className="text-lg text-muted-foreground mb-10">
-                これは「会費」ではありません。組織の生存能力を高めるための、最も確実な「投資」です。
-              </p>
             </div>
           </div>
         </div>
@@ -360,11 +344,7 @@ export default function Home() {
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Button size="lg" className="bg-primary hover:bg-primary/90 text-white font-bold text-lg px-12 h-20 rounded-none shadow-[0_0_30px_rgba(var(--primary),0.3)]">
-              The Global Resilience Summit 入会案内<br />
-              <span className="text-sm font-normal opacity-80">（Hub機能詳細）</span>
-            </Button>
-            <Button variant="outline" size="lg" className="border-white/20 text-white hover:bg-white/10 font-bold text-lg px-12 h-20 rounded-none">
-              Hubのデモ画面を見る
+              まず無料デモを見る（3分でわかります）
             </Button>
           </div>
         </div>
