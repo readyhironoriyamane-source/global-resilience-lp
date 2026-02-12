@@ -112,10 +112,10 @@ export default function Home() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
-                className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-display font-bold text-white mb-8 leading-tight tracking-tight"
+                className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-display font-bold text-white mb-8 leading-tight tracking-tight"
               >
-                <span className="inline-block">日本中の防災担当者の「知」が繋がれば、</span><br />
-                <span className="inline-block">どんな困りごとも解決できる。</span>
+                <span className="inline-block whitespace-nowrap">日本中の防災担当者の「知」が繋がれば、</span><br />
+                <span className="inline-block whitespace-nowrap">どんな困りごとも解決できる。</span>
               </motion.h1>
               
               <motion.p
