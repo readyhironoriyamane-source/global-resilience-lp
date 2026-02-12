@@ -244,9 +244,9 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8">
             <TechCard delay={0}>
               <div className="h-1 bg-primary w-12 mb-8" />
-              <div className="mb-6 relative w-24 h-24 -ml-4">
-                <p className="text-xs font-bold text-primary tracking-widest mb-2">NEWS</p>
-                <img src="https://files.manuscdn.com/user_upload_by_module/session_file/92549119/wBOxemwXxzJYOndk.png" alt="NEWS" className="w-full h-full object-contain drop-shadow-[0_0_15px_rgba(56,189,248,0.5)]" />
+              <div className="mb-6 relative w-full aspect-video rounded-lg overflow-hidden border border-white/10">
+                <p className="absolute top-2 left-2 z-10 text-xs font-bold text-primary bg-black/80 px-2 py-1 rounded tracking-widest">NEWS</p>
+                <img src="https://files.manuscdn.com/user_upload_by_module/session_file/92549119/JxSqUpegHvHckfTo.png" alt="NEWS" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
               </div>
               <h3 className="text-xl font-display font-bold text-white mb-4">今日の防災情報が、自動で届く</h3>
               <p className="text-muted-foreground leading-relaxed">
@@ -257,9 +257,9 @@ export default function Home() {
 
             <TechCard delay={0.2}>
               <div className="h-1 bg-primary w-12 mb-8" />
-              <div className="mb-6 relative w-24 h-24 -ml-4">
-                <p className="text-xs font-bold text-primary tracking-widest mb-2">DASHBOARD</p>
-                <img src="https://files.manuscdn.com/user_upload_by_module/session_file/92549119/jiBEjQDiMFPUvLkF.png" alt="DASHBOARD" className="w-full h-full object-contain drop-shadow-[0_0_15px_rgba(56,189,248,0.5)]" />
+              <div className="mb-6 relative w-full aspect-video rounded-lg overflow-hidden border border-white/10">
+                <p className="absolute top-2 left-2 z-10 text-xs font-bold text-primary bg-black/80 px-2 py-1 rounded tracking-widest">DASHBOARD</p>
+                <img src="https://files.manuscdn.com/user_upload_by_module/session_file/92549119/vVUCMWyZqmSXKkys.png" alt="DASHBOARD" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
               </div>
               <h3 className="text-xl font-display font-bold text-white mb-4">自社の防災レベルが、点数でわかる</h3>
               <p className="text-muted-foreground leading-relaxed">
@@ -270,9 +270,9 @@ export default function Home() {
 
             <TechCard delay={0.4}>
               <div className="h-1 bg-primary w-12 mb-8" />
-              <div className="mb-6 relative w-24 h-24 -ml-4">
-                <p className="text-xs font-bold text-primary tracking-widest mb-2">COMMUNITY</p>
-                <img src="https://files.manuscdn.com/user_upload_by_module/session_file/92549119/ZYsIEbJnjCrbsaQs.png" alt="COMMUNITY" className="w-full h-full object-contain drop-shadow-[0_0_15px_rgba(56,189,248,0.5)]" />
+              <div className="mb-6 relative w-full aspect-video rounded-lg overflow-hidden border border-white/10">
+                <p className="absolute top-2 left-2 z-10 text-xs font-bold text-primary bg-black/80 px-2 py-1 rounded tracking-widest">COMMUNITY</p>
+                <img src="https://files.manuscdn.com/user_upload_by_module/session_file/92549119/KuKGDLWLscrlXBrk.png" alt="COMMUNITY" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
               </div>
               <h3 className="text-xl font-display font-bold text-white mb-4">防災の『困った』を、全国の担当者に聞ける</h3>
               <p className="text-muted-foreground leading-relaxed">
