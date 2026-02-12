@@ -114,8 +114,8 @@ export default function Home() {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-display font-bold text-white mb-8 leading-tight tracking-tight"
               >
-                <span className="inline-block">防災担当者の「困った」を、</span><br />
-                <span className="inline-block">AIとコミュニティで解決する。</span>
+                <span className="inline-block">日本中の防災担当者の「知」が繋がれば、</span><br />
+                <span className="inline-block">どんな困りごとも解決できる。</span>
               </motion.h1>
               
               <motion.p
@@ -124,8 +124,9 @@ export default function Home() {
                 transition={{ duration: 0.8, delay: 0.4 }}
                 className="text-xl md:text-2xl text-muted-foreground mb-12 leading-relaxed"
               >
-                月5万円。アルバイト1人分のコストで、<br />
-                全国の知識・専門家・最新情報が手に入る。
+                防災大国・日本。でも現場の担当者は、今日もひとりで悩んでいる。<br />
+                その孤立した知識を束ねるプラットフォームが、<br />
+                The Global Resilience Hub です。
               </motion.p>
               
               <motion.div
