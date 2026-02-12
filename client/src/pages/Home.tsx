@@ -247,8 +247,7 @@ export default function Home() {
               <div className="mb-6 relative w-24 h-24 -ml-4">
                 <img src="https://files.manuscdn.com/user_upload_by_module/session_file/92549119/wBOxemwXxzJYOndk.png" alt="AI Intelligence" className="w-full h-full object-contain drop-shadow-[0_0_15px_rgba(56,189,248,0.5)]" />
               </div>
-              <h3 className="text-2xl font-display font-bold text-white mb-2">AI Intelligence</h3>
-              <p className="text-sm font-bold text-primary mb-4">AIが毎日、世界の防災ニュースを日本語で要約</p>
+              <h3 className="text-xl font-display font-bold text-white mb-4">AIが毎日、世界の防災ニュースを日本語で要約</h3>
               <p className="text-muted-foreground leading-relaxed">
                 情報収集の時間をゼロにする。見落としも防ぐ。
               </p>
@@ -259,8 +258,7 @@ export default function Home() {
               <div className="mb-6 relative w-24 h-24 -ml-4">
                 <img src="https://files.manuscdn.com/user_upload_by_module/session_file/92549119/ZYsIEbJnjCrbsaQs.png" alt="Community & Thread" className="w-full h-full object-contain drop-shadow-[0_0_15px_rgba(56,189,248,0.5)]" />
               </div>
-              <h3 className="text-2xl font-display font-bold text-white mb-2">Community & Thread</h3>
-              <p className="text-sm font-bold text-primary mb-4">全国の防災担当者とつながれるコミュニティ</p>
+              <h3 className="text-xl font-display font-bold text-white mb-4">全国の防災担当者とつながれるコミュニティ</h3>
               <p className="text-muted-foreground leading-relaxed">
                 「うちだけ？」が「あるある」に変わる場所。
               </p>
@@ -271,8 +269,7 @@ export default function Home() {
               <div className="mb-6 relative w-24 h-24 -ml-4">
                 <img src="https://files.manuscdn.com/user_upload_by_module/session_file/92549119/MgimVHIxdfPadSEe.png" alt="Solution Marketplace" className="w-full h-full object-contain drop-shadow-[0_0_15px_rgba(56,189,248,0.5)]" />
               </div>
-              <h3 className="text-2xl font-display font-bold text-white mb-2">Solution Marketplace</h3>
-              <p className="text-sm font-bold text-primary mb-4">審査済みの防災サービス・専門家に相談できる場所</p>
+              <h3 className="text-xl font-display font-bold text-white mb-4">審査済みの防災サービス・専門家に相談できる場所</h3>
               <p className="text-muted-foreground leading-relaxed">
                 信頼できる業者探しで、失敗しない。
               </p>
