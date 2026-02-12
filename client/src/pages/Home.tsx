@@ -238,40 +238,46 @@ export default function Home() {
         <div className="container">
           <SectionHeading 
             subtitle="THE SOLUTION"
-            title={<>防災担当者に必要な情報・仲間・専門家が、<br />1か所に集まった。<br /><span className="text-primary text-3xl md:text-4xl block mt-4">The Global Resilience Hub 3つの機能</span></>}
+            title={<>THE GLOBAL RESILIENCE HUB 3つの機能<br /><span className="text-muted-foreground text-xl md:text-2xl block mt-4 font-normal">防災情報・自社診断・Q&Aが、1か所に集まった。</span></>}
           />
 
           <div className="grid md:grid-cols-3 gap-8">
             <TechCard delay={0}>
               <div className="h-1 bg-primary w-12 mb-8" />
               <div className="mb-6 relative w-24 h-24 -ml-4">
-                <img src="https://files.manuscdn.com/user_upload_by_module/session_file/92549119/wBOxemwXxzJYOndk.png" alt="AI Intelligence" className="w-full h-full object-contain drop-shadow-[0_0_15px_rgba(56,189,248,0.5)]" />
+                <p className="text-xs font-bold text-primary tracking-widest mb-2">NEWS</p>
+                <img src="https://files.manuscdn.com/user_upload_by_module/session_file/92549119/wBOxemwXxzJYOndk.png" alt="NEWS" className="w-full h-full object-contain drop-shadow-[0_0_15px_rgba(56,189,248,0.5)]" />
               </div>
-              <h3 className="text-xl font-display font-bold text-white mb-4">AIが毎日、世界の防災ニュースを日本語で要約</h3>
+              <h3 className="text-xl font-display font-bold text-white mb-4">今日の防災情報が、自動で届く</h3>
               <p className="text-muted-foreground leading-relaxed">
-                情報収集の時間をゼロにする。見落としも防ぐ。
+                国内外の防災ニュースをAIが毎日まとめる<br />
+                自分で調べる時間がゼロになる
               </p>
             </TechCard>
 
             <TechCard delay={0.2}>
               <div className="h-1 bg-primary w-12 mb-8" />
               <div className="mb-6 relative w-24 h-24 -ml-4">
-                <img src="https://files.manuscdn.com/user_upload_by_module/session_file/92549119/ZYsIEbJnjCrbsaQs.png" alt="Community & Thread" className="w-full h-full object-contain drop-shadow-[0_0_15px_rgba(56,189,248,0.5)]" />
+                <p className="text-xs font-bold text-primary tracking-widest mb-2">DASHBOARD</p>
+                <img src="https://files.manuscdn.com/user_upload_by_module/session_file/92549119/jiBEjQDiMFPUvLkF.png" alt="DASHBOARD" className="w-full h-full object-contain drop-shadow-[0_0_15px_rgba(56,189,248,0.5)]" />
               </div>
-              <h3 className="text-xl font-display font-bold text-white mb-4">全国の防災担当者とつながれるコミュニティ</h3>
+              <h3 className="text-xl font-display font-bold text-white mb-4">自社の防災レベルが、点数でわかる</h3>
               <p className="text-muted-foreground leading-relaxed">
-                「うちだけ？」が「あるある」に変わる場所。
+                診断結果で「うちはどこが弱いか」が一目瞭然<br />
+                上司への報告資料に、そのまま使える
               </p>
             </TechCard>
 
             <TechCard delay={0.4}>
               <div className="h-1 bg-primary w-12 mb-8" />
               <div className="mb-6 relative w-24 h-24 -ml-4">
-                <img src="https://files.manuscdn.com/user_upload_by_module/session_file/92549119/MgimVHIxdfPadSEe.png" alt="Solution Marketplace" className="w-full h-full object-contain drop-shadow-[0_0_15px_rgba(56,189,248,0.5)]" />
+                <p className="text-xs font-bold text-primary tracking-widest mb-2">COMMUNITY</p>
+                <img src="https://files.manuscdn.com/user_upload_by_module/session_file/92549119/ZYsIEbJnjCrbsaQs.png" alt="COMMUNITY" className="w-full h-full object-contain drop-shadow-[0_0_15px_rgba(56,189,248,0.5)]" />
               </div>
-              <h3 className="text-xl font-display font-bold text-white mb-4">審査済みの防災サービス・専門家に相談できる場所</h3>
+              <h3 className="text-xl font-display font-bold text-white mb-4">防災の『困った』を、全国の担当者に聞ける</h3>
               <p className="text-muted-foreground leading-relaxed">
-                信頼できる業者探しで、失敗しない。
+                Yahoo知恵袋のように質問を投稿できる<br />
+                同じ悩みを持つ担当者からすぐ回答が来る
               </p>
             </TechCard>
           </div>
