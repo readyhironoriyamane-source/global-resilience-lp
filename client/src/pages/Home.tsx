@@ -276,7 +276,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-display font-bold text-white mb-4">防災の『困った』を、全国の担当者に聞ける</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Yahoo知恵袋のように質問を投稿できる<br />
+                掲示板のように、質問を投稿できる<br />
                 同じ悩みを持つ担当者からすぐ回答が来る
               </p>
             </TechCard>
