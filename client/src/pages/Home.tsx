@@ -115,7 +115,7 @@ export default function Home() {
                 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-display font-bold text-white mb-8 leading-tight tracking-tight"
               >
                 <span className="inline-block whitespace-nowrap">自社の防災レベルを診断し、</span><br />
-                <span className="inline-block whitespace-nowrap">専門家に相談できる。</span>
+                <span className="inline-block whitespace-nowrap">全国の担当者とつながれる。</span>
               </motion.h1>
               
               <motion.p
@@ -124,7 +124,7 @@ export default function Home() {
                 transition={{ duration: 0.8, delay: 0.4 }}
                 className="text-xl md:text-2xl text-muted-foreground mb-12 leading-relaxed"
               >
-                ニュース・診断・相談、<br />
+                ニュース・診断・つながり、<br />
                 防災に必要な3つが揃う。
               </motion.p>
               
@@ -266,9 +266,9 @@ export default function Home() {
                 <p className="absolute top-2 left-2 z-10 text-xs font-bold text-primary bg-black/80 px-2 py-1 rounded tracking-widest">COMMUNITY</p>
                 <img src="https://files.manuscdn.com/user_upload_by_module/session_file/92549119/KuKGDLWLscrlXBrk.png" alt="COMMUNITY" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
               </div>
-              <h3 className="text-xl font-display font-bold text-white mb-4">世界中の防災担当者にいつでも相談できる</h3>
+              <h3 className="text-xl font-display font-bold text-white mb-4">全国の防災担当者と、意見交換できる</h3>
               <p className="text-muted-foreground leading-relaxed">
-                24時間、世界中の担当者・専門家コミュニティに<br />
+                24時間、同じ立場の担当者・専門家コミュニティに<br />
                 質問・相談が可能。
               </p>
             </TechCard>
