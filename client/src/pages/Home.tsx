@@ -305,7 +305,7 @@ export default function Home() {
               </div>
 
               {/* Center Column: Individual Plan */}
-              <div className="p-6 border border-white/10 bg-card relative flex flex-col">
+              <div className="p-6 border border-white/10 bg-card relative flex flex-col h-full">
                 <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-white/10 text-white text-[10px] font-bold px-3 py-1 uppercase tracking-wider border border-white/20 backdrop-blur-sm">
                   個人向け
                 </div>
@@ -328,15 +328,18 @@ export default function Home() {
                     <span>定例会・カンファレンス参加</span>
                   </li>
                 </ul>
-                <div className="pt-6 border-t border-white/10">
+                <div className="pt-6 border-t border-white/10 mt-auto">
                   <p className="text-2xl font-display font-bold text-white">年間 10,000円</p>
                   <p className="text-xs text-muted-foreground mt-1">（月あたり833円）</p>
-                  <p className="text-[10px] text-muted-foreground mt-2">※年間一括払い</p>
+                  <p className="text-[10px] text-muted-foreground mt-2 mb-4">※年間一括払い</p>
+                  <Button className="w-full bg-white text-primary hover:bg-white/90 font-bold text-sm h-10">
+                    14日間無料で試す
+                  </Button>
                 </div>
               </div>
 
               {/* Right Column: Corporate Plan */}
-              <div className="p-6 border-2 border-primary bg-card relative flex flex-col shadow-[0_0_50px_rgba(var(--primary),0.1)]">
+              <div className="p-6 border-2 border-primary bg-card relative flex flex-col shadow-[0_0_50px_rgba(var(--primary),0.1)] h-full">
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-white text-xs font-bold px-4 py-1 uppercase tracking-wider">
                   法人向け
                 </div>
@@ -363,11 +366,14 @@ export default function Home() {
                     <span className="font-bold">組織診断レポート出力</span>
                   </li>
                 </ul>
-                <div className="pt-6 border-t border-white/10">
-                  <p className="text-2xl font-display font-bold text-white">月額 5万円<span className="text-sm font-normal text-muted-foreground ml-2">（年間 60万円）</span></p>
-                  <p className="text-xs text-primary mt-2 font-bold">5名まで利用可能 ＝ 1人あたり月1万円</p>
+                <div className="pt-6 border-t border-white/10 mt-auto">
+                  <p className="text-2xl font-display font-bold text-white">月額 5万円 <span className="text-sm font-normal text-muted-foreground ml-1">（年間 60万円）</span></p>
+                  <p className="text-xs text-primary font-bold mt-1">5名まで利用可能 ＝ 1人あたり月1万円</p>
                   <p className="text-[10px] text-muted-foreground mt-1">専門家顧問契約と同等コストで、組織全体をカバー</p>
-                  <p className="text-[10px] text-muted-foreground mt-2">※年間一括払い</p>
+                  <p className="text-[10px] text-muted-foreground mt-2 mb-4">※年間一括払い</p>
+                  <Button className="w-full bg-primary text-white hover:bg-primary/90 font-bold text-sm h-10">
+                    14日間無料で試す
+                  </Button>
                 </div>
               </div>
             </div>
