@@ -154,29 +154,16 @@ export default function Home() {
         {/* Background Visuals - Absolute Positioned behind text */}
         <div className="absolute top-0 right-0 w-[65%] h-full hidden lg:block z-0 pointer-events-none overflow-hidden">
           <div className="relative w-full h-full">
-            {/* PC Frame - Positioned to bleed off right edge */}
+            {/* Main Visual - Positioned to bleed off right edge */}
             <motion.div
               initial={{ opacity: 0, x: 100 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-              className="absolute top-1/2 -translate-y-1/2 left-[10%] w-[140%] overflow-hidden"
+              className="absolute top-1/2 -translate-y-1/2 left-[0%] w-[150%] overflow-hidden"
             >
-              <img src="https://files.manuscdn.com/user_upload_by_module/session_file/92549119/GLptRwOySMOboyRI.png" alt="The Global Resilience Hub Dashboard" className="w-full h-auto opacity-80" />
+              <img src="https://files.manuscdn.com/user_upload_by_module/session_file/92549119/GLptRwOySMOboyRI.png" alt="The Global Resilience Hub Dashboard" className="w-full h-auto opacity-90" />
               {/* Fade out to left to blend with text area - Enhanced for readability */}
-              <div className="absolute inset-y-0 left-0 w-2/3 bg-gradient-to-r from-[#050505] via-[#050505]/80 to-transparent pointer-events-none" />
-            </motion.div>
-
-            {/* Mobile Frame */}
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1.2, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-              className="absolute bottom-[10%] left-0 w-[220px] rounded-[2.5rem] overflow-hidden shadow-[0_30px_80px_rgba(0,0,0,0.8)] border-[8px] border-[#0a0a0a] bg-black"
-            >
-              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-7 bg-[#0a0a0a] rounded-b-xl z-30" />
-              <img src="https://files.manuscdn.com/user_upload_by_module/session_file/92549119/CJsWzHwtaALyIkbP.png" alt="The Global Resilience Hub Mobile" className="w-full h-auto opacity-80" />
-              {/* Mobile Reflection */}
-              <div className="absolute inset-0 bg-gradient-to-tr from-white/10 to-transparent pointer-events-none" />
+              <div className="absolute inset-y-0 left-0 w-1/2 bg-gradient-to-r from-[#050505] via-[#050505]/60 to-transparent pointer-events-none" />
             </motion.div>
           </div>
         </div>
