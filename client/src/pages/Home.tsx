@@ -159,17 +159,9 @@ export default function Home() {
               initial={{ opacity: 0, x: 100 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-              className="absolute top-1/2 -translate-y-1/2 left-[10%] w-[140%] rounded-xl overflow-hidden shadow-2xl border border-white/10 bg-black"
+              className="absolute top-1/2 -translate-y-1/2 left-[10%] w-[140%] overflow-hidden"
             >
-              <div className="h-8 bg-[#0a0a0a] flex items-center px-4 gap-2 border-b border-white/5">
-                <div className="w-2 h-2 rounded-full bg-white/20" />
-                <div className="w-2 h-2 rounded-full bg-white/20" />
-                <div className="w-2 h-2 rounded-full bg-white/20" />
-              </div>
-              <img src="https://files.manuscdn.com/user_upload_by_module/session_file/92549119/tfxfKpNoSNKWqGCm.png" alt="The Global Resilience Hub Dashboard" className="w-full h-auto opacity-60" />
-              {/* Premium Reflection Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-tr from-white/5 via-transparent to-transparent pointer-events-none" />
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/40 pointer-events-none" />
+              <img src="https://files.manuscdn.com/user_upload_by_module/session_file/92549119/GLptRwOySMOboyRI.png" alt="The Global Resilience Hub Dashboard" className="w-full h-auto opacity-80" />
               {/* Fade out to left to blend with text area - Enhanced for readability */}
               <div className="absolute inset-y-0 left-0 w-2/3 bg-gradient-to-r from-[#050505] via-[#050505]/80 to-transparent pointer-events-none" />
             </motion.div>
