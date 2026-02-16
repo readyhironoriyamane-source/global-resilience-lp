@@ -280,50 +280,59 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Center Column: Individual Plan (New) */}
-              <div className="p-6 border border-blue-300/30 bg-blue-900/10 relative flex flex-col">
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-blue-400/20 text-blue-200 text-[10px] font-bold px-3 py-1 uppercase tracking-wider border border-blue-400/30 backdrop-blur-sm">
+              {/* Center Column: Individual Plan */}
+              <div className="p-6 border border-white/10 bg-card relative flex flex-col">
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-white/10 text-white text-[10px] font-bold px-3 py-1 uppercase tracking-wider border border-white/20 backdrop-blur-sm">
                   個人向け
                 </div>
-                <h3 className="text-lg font-bold text-blue-100 mb-6">レジハブ</h3>
+                <h3 className="text-lg font-bold text-white mb-6">レジハブ</h3>
                 <ul className="space-y-3 mb-8 flex-grow">
-                  <li className="flex items-center gap-3 text-blue-100/80 text-sm">
-                    <CheckCircle2 className="w-4 h-4 text-blue-400 flex-shrink-0" />
+                  <li className="flex items-center gap-3 text-white/80 text-sm">
+                    <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0" />
                     <span>防災ニュース</span>
                   </li>
-                  <li className="flex items-center gap-3 text-blue-100/80 text-sm">
-                    <CheckCircle2 className="w-4 h-4 text-blue-400 flex-shrink-0" />
+                  <li className="flex items-center gap-3 text-white/80 text-sm">
+                    <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0" />
                     <span>レベル診断</span>
                   </li>
-                  <li className="flex items-center gap-3 text-blue-100/80 text-sm">
-                    <CheckCircle2 className="w-4 h-4 text-blue-400 flex-shrink-0" />
+                  <li className="flex items-center gap-3 text-white/80 text-sm">
+                    <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0" />
                     <span>コミュニティ相談</span>
                   </li>
-                  <li className="flex items-center gap-3 text-blue-100/80 text-sm">
-                    <CheckCircle2 className="w-4 h-4 text-blue-400 flex-shrink-0" />
+                  <li className="flex items-center gap-3 text-white/80 text-sm">
+                    <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0" />
                     <span>定例会・カンファレンス参加</span>
                   </li>
                 </ul>
-                <div className="pt-6 border-t border-blue-400/20">
-                  <p className="text-2xl font-display font-bold text-blue-100">年間 10,000円</p>
-                  <p className="text-xs text-blue-200/60 mt-1">（月あたり833円）</p>
+                <div className="pt-6 border-t border-white/10">
+                  <p className="text-2xl font-display font-bold text-white">年間 10,000円</p>
+                  <p className="text-xs text-muted-foreground mt-1">（月あたり833円）</p>
+                  <p className="text-[10px] text-muted-foreground mt-2">※年間一括払い</p>
                 </div>
               </div>
 
-              {/* Right Column: Corporate Plan (Modified) */}
+              {/* Right Column: Corporate Plan */}
               <div className="p-6 border-2 border-primary bg-card relative flex flex-col shadow-[0_0_50px_rgba(var(--primary),0.1)]">
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-white text-xs font-bold px-4 py-1 uppercase tracking-wider">
-                  新しいスタンダード
+                  法人向け
                 </div>
                 <h3 className="text-lg font-bold text-white mb-6">レジハブ</h3>
                 <ul className="space-y-3 mb-8 flex-grow">
                   <li className="flex items-center gap-3 text-white text-sm">
                     <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0" />
-                    <span>定例会・カンファレンス参加</span>
+                    <span>防災ニュース</span>
                   </li>
                   <li className="flex items-center gap-3 text-white text-sm">
                     <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0" />
-                    <span>Hub フルアクセス（AI・コミュニティ）</span>
+                    <span>レベル診断</span>
+                  </li>
+                  <li className="flex items-center gap-3 text-white text-sm">
+                    <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0" />
+                    <span>コミュニティ相談</span>
+                  </li>
+                  <li className="flex items-center gap-3 text-white text-sm">
+                    <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0" />
+                    <span>定例会・カンファレンス参加</span>
                   </li>
                   <li className="flex items-center gap-3 text-white text-sm bg-primary/10 p-2 -mx-2 border border-primary/20 rounded">
                     <Zap className="w-4 h-4 text-primary fill-current flex-shrink-0" />
@@ -331,10 +340,10 @@ export default function Home() {
                   </li>
                 </ul>
                 <div className="pt-6 border-t border-white/10">
-                  <p className="text-2xl font-display font-bold text-white">月額 5万円</p>
-                  <p className="text-xs text-muted-foreground mt-1">（年間 60万円）</p>
+                  <p className="text-2xl font-display font-bold text-white">月額 5万円<span className="text-sm font-normal text-muted-foreground ml-2">（年間 60万円）</span></p>
                   <p className="text-xs text-primary mt-2 font-bold">5名まで利用可能 ＝ 1人あたり月1万円</p>
                   <p className="text-[10px] text-muted-foreground mt-1">専門家顧問契約と同等コストで、組織全体をカバー</p>
+                  <p className="text-[10px] text-muted-foreground mt-2">※年間一括払い</p>
                 </div>
               </div>
             </div>
