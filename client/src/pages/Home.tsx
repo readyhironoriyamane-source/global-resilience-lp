@@ -73,14 +73,17 @@ export default function Home() {
               <span className="font-display font-bold text-lg leading-none tracking-wide text-primary">RESILIENCE HUB</span>
             </div>
           </div>
-          <div className="hidden md:flex items-center gap-10 text-sm font-bold tracking-widest uppercase text-muted-foreground">
-            <a href="#problem" className="hover:text-white transition-colors">Problem</a>
-            <a href="#solution" className="hover:text-white transition-colors">Solution</a>
-            <a href="#value" className="hover:text-white transition-colors">Value</a>
+          <div className="hidden md:flex items-center gap-8 text-sm font-bold tracking-wider text-white/70">
+            <a href="#problem" className="hover:text-white transition-colors">防災における課題</a>
+            <a href="#solution" className="hover:text-white transition-colors">レジハブ3つの主機能</a>
+            <a href="#value" className="hover:text-white transition-colors">料金プラン</a>
           </div>
           <div className="flex items-center gap-4">
             <Button variant="ghost" className="hidden md:flex text-white hover:bg-white/10 font-bold text-sm">
               ログイン
+            </Button>
+            <Button variant="ghost" className="hidden md:flex text-white hover:bg-white/10 font-bold text-sm">
+              新規登録
             </Button>
             <Button className="bg-white text-black hover:bg-white/90 font-bold px-6 rounded-none">
               資料請求
