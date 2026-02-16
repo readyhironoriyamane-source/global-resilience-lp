@@ -196,7 +196,7 @@ export default function Home() {
                   <p className="text-xl font-bold text-white">・専門家に相談したいが、誰に頼めばいいかわからない</p>
                 </div>
                 <p className="text-2xl font-bold text-primary leading-relaxed mt-8">
-                  この3つ、全部解決します。
+                  レジハブが、3つまとめて解決します。
                 </p>
               </div>
             </div>
@@ -276,7 +276,7 @@ export default function Home() {
             
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-6">
-                専門家1人を雇うより安く、<br />100人分の知識が手に入る。
+                担当者1人で抱えるより、<br />100人分の知恵が使える。
               </h2>
             </div>
 
@@ -385,7 +385,7 @@ export default function Home() {
       <section className="py-32 border-t border-white/5 bg-white/[0.02]">
         <div className="container text-center">
           <h2 className="text-4xl md:text-6xl font-display font-bold text-white mb-12">
-            備えるレベルを、世界基準へ。
+            まず、自社の防災レベルを確認する。
           </h2>
           
           <div className="flex flex-col items-center gap-3">
