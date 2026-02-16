@@ -115,7 +115,7 @@ export default function Home() {
                 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-display font-bold text-white mb-8 leading-tight tracking-tight"
               >
                 <span className="inline-block whitespace-nowrap">自社の防災レベルを診断し、</span><br />
-                <span className="inline-block whitespace-nowrap">全国の担当者とつながれる。</span>
+                <span className="inline-block whitespace-nowrap">全国の担当者とつながる。</span>
               </motion.h1>
               
               <motion.p
