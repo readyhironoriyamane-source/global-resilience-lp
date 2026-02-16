@@ -115,11 +115,24 @@ export default function Home() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
-                className="text-xl md:text-2xl text-muted-foreground mb-12 leading-relaxed"
+                className="text-xl md:text-2xl text-muted-foreground mb-6 leading-relaxed"
               >
                 ニュース・診断・つながり、<br />
                 防災に必要な3つが揃う。
               </motion.p>
+              
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.5 }}
+                className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 border border-blue-500/30 text-blue-300 text-sm font-bold mb-12"
+              >
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+                </span>
+                14日間無料トライアル実施中
+              </motion.div>
               
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
@@ -136,9 +149,9 @@ export default function Home() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.8 }}
-                className="mt-4 text-sm text-muted-foreground font-mono"
+                className="mt-3 text-sm text-muted-foreground font-medium"
               >
-                ※月額換算 50,000円〜
+                登録から14日間、全機能を無料で試せます。
               </motion.p>
             </div>
 
@@ -188,14 +201,13 @@ export default function Home() {
               </div>
             </div>
             <div className="relative">
-              <div className="aspect-square bg-gradient-to-br from-white/5 to-transparent border border-white/10 p-8 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-20 h-20 border-2 border-dashed border-muted-foreground rounded-full mx-auto mb-6 flex items-center justify-center">
-                    <span className="text-2xl font-bold text-muted-foreground">?</span>
-                  </div>
-                  <p className="font-mono text-sm text-muted-foreground tracking-widest uppercase">つながりの断絶</p>
-                  <p className="text-white font-bold mt-2">孤立した知識</p>
-                </div>
+              <div className="relative w-full aspect-video rounded-xl overflow-hidden border border-white/10 shadow-2xl">
+                 <img 
+                   src="https://files.manuscdn.com/user_upload_by_module/session_file/92549119/VPLJBQAwwKhWSROp.jpeg" 
+                   alt="防災における課題：つながりの断絶と孤立した知識" 
+                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                 />
+                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
               </div>
               {/* Decorative Elements */}
               <div className="absolute -top-4 -right-4 w-24 h-24 border-t-2 border-r-2 border-primary" />
@@ -266,6 +278,15 @@ export default function Home() {
               <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-6">
                 専門家1人を雇うより安く、<br />100人分の知識が手に入る。
               </h2>
+            </div>
+
+            {/* Free Trial Banner */}
+            <div className="max-w-3xl mx-auto mb-8">
+              <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg py-3 px-4 text-center">
+                <p className="text-blue-300 font-bold text-sm tracking-wide">
+                  まずは14日間、全機能を無料でお試しください。
+                </p>
+              </div>
             </div>
 
             <div className="grid md:grid-cols-3 gap-6 items-stretch mb-12">
@@ -361,10 +382,11 @@ export default function Home() {
             備えるレベルを、世界基準へ。
           </h2>
           
-          <div className="flex flex-col sm:flex-row gap-6 justify-center">
+          <div className="flex flex-col items-center gap-3">
             <Button size="lg" className="bg-primary hover:bg-primary/90 text-white font-bold text-lg px-12 h-20 rounded-none shadow-[0_0_30px_rgba(var(--primary),0.3)]">
               今すぐ診断する
             </Button>
+            <p className="text-white/40 text-sm font-medium">登録から14日間、全機能を無料で試せます。</p>
           </div>
         </div>
       </section>
