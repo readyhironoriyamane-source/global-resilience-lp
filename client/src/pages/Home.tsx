@@ -297,41 +297,76 @@ export default function Home() {
               </h2>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8 items-stretch mb-12">
-              {/* Old Model */}
-              <div className="p-8 border border-white/10 bg-white/5 opacity-60 flex flex-col">
-                <h3 className="text-xl font-bold text-muted-foreground mb-6">専門家・コンサル費用</h3>
+            <div className="grid md:grid-cols-3 gap-6 items-stretch mb-12">
+              {/* Left Column: Expert/Consultant */}
+              <div className="p-6 border border-white/10 bg-white/5 opacity-60 flex flex-col">
+                <h3 className="text-lg font-bold text-muted-foreground mb-6">専門家・コンサル費用</h3>
                 <ul className="space-y-4 mb-8 flex-grow">
-                  <li className="flex items-center gap-3 text-muted-foreground">
-                    <CheckCircle2 className="w-5 h-5" />
+                  <li className="flex items-center gap-3 text-muted-foreground text-sm">
+                    <CheckCircle2 className="w-4 h-4 flex-shrink-0" />
                     <span>スポット相談・顧問契約</span>
                   </li>
                 </ul>
                 <div className="pt-6 border-t border-white/10">
-                  <p className="text-2xl font-display font-bold text-muted-foreground">年間 60万円以上</p>
+                  <p className="text-xl font-display font-bold text-muted-foreground">年間 60万円以上</p>
                 </div>
               </div>
 
-              {/* New Model */}
-              <div className="p-8 border-2 border-primary bg-card relative flex flex-col shadow-[0_0_50px_rgba(var(--primary),0.1)]">
+              {/* Center Column: Individual Plan (New) */}
+              <div className="p-6 border border-blue-300/30 bg-blue-900/10 relative flex flex-col">
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-blue-400/20 text-blue-200 text-[10px] font-bold px-3 py-1 uppercase tracking-wider border border-blue-400/30 backdrop-blur-sm">
+                  For Individual
+                </div>
+                <h3 className="text-lg font-bold text-blue-100 mb-6">The Global Resilience Hub</h3>
+                <ul className="space-y-3 mb-8 flex-grow">
+                  <li className="flex items-center gap-3 text-blue-100/80 text-sm">
+                    <CheckCircle2 className="w-4 h-4 text-blue-400 flex-shrink-0" />
+                    <span>防災ニュース</span>
+                  </li>
+                  <li className="flex items-center gap-3 text-blue-100/80 text-sm">
+                    <CheckCircle2 className="w-4 h-4 text-blue-400 flex-shrink-0" />
+                    <span>レベル診断</span>
+                  </li>
+                  <li className="flex items-center gap-3 text-blue-100/80 text-sm">
+                    <CheckCircle2 className="w-4 h-4 text-blue-400 flex-shrink-0" />
+                    <span>コミュニティ相談</span>
+                  </li>
+                  <li className="flex items-center gap-3 text-blue-100/80 text-sm">
+                    <CheckCircle2 className="w-4 h-4 text-blue-400 flex-shrink-0" />
+                    <span>定例会・カンファレンス参加</span>
+                  </li>
+                </ul>
+                <div className="pt-6 border-t border-blue-400/20">
+                  <p className="text-2xl font-display font-bold text-blue-100">年間 10,000円</p>
+                  <p className="text-xs text-blue-200/60 mt-1">（月あたり833円）</p>
+                </div>
+              </div>
+
+              {/* Right Column: Corporate Plan (Modified) */}
+              <div className="p-6 border-2 border-primary bg-card relative flex flex-col shadow-[0_0_50px_rgba(var(--primary),0.1)]">
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-white text-xs font-bold px-4 py-1 uppercase tracking-wider">
                   The New Standard
                 </div>
-                <h3 className="text-xl font-bold text-white mb-6">The Global Resilience Hub</h3>
-                <ul className="space-y-4 mb-8 flex-grow">
-                  <li className="flex items-center gap-3 text-white">
-                    <CheckCircle2 className="w-5 h-5 text-primary" />
+                <h3 className="text-lg font-bold text-white mb-6">The Global Resilience Hub</h3>
+                <ul className="space-y-3 mb-8 flex-grow">
+                  <li className="flex items-center gap-3 text-white text-sm">
+                    <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0" />
                     <span>定例会・カンファレンス参加</span>
                   </li>
-                  <li className="flex items-center gap-3 text-white bg-primary/10 p-3 -mx-3 border border-primary/20">
-                    <Zap className="w-5 h-5 text-primary fill-current" />
-                    <span className="font-bold">Hub フルアクセス（AI・コミュニティ）</span>
+                  <li className="flex items-center gap-3 text-white text-sm">
+                    <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0" />
+                    <span>Hub フルアクセス（AI・コミュニティ）</span>
+                  </li>
+                  <li className="flex items-center gap-3 text-white text-sm bg-primary/10 p-2 -mx-2 border border-primary/20 rounded">
+                    <Zap className="w-4 h-4 text-primary fill-current flex-shrink-0" />
+                    <span className="font-bold">組織診断レポート出力</span>
                   </li>
                 </ul>
                 <div className="pt-6 border-t border-white/10">
-                  <div className="flex items-baseline gap-4">
-                    <p className="text-3xl font-display font-bold text-white">月額 5万円<span className="text-lg font-normal text-muted-foreground ml-2">（年間 60万円）</span></p>
-                  </div>
+                  <p className="text-2xl font-display font-bold text-white">月額 5万円</p>
+                  <p className="text-xs text-muted-foreground mt-1">（年間 60万円）</p>
+                  <p className="text-xs text-primary mt-2 font-bold">5名まで利用可能 ＝ 1人あたり月1万円</p>
+                  <p className="text-[10px] text-muted-foreground mt-1">専門家顧問契約と同等コストで、組織全体をカバー</p>
                 </div>
               </div>
             </div>
