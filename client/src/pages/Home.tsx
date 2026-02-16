@@ -79,8 +79,8 @@ export default function Home() {
             <a href="#value" className="hover:text-white transition-colors">Value</a>
           </div>
           <div className="flex items-center gap-4">
-            <Button variant="ghost" className="hidden md:flex text-white hover:bg-white/10 font-mono text-xs">
-              LOGIN
+            <Button variant="ghost" className="hidden md:flex text-white hover:bg-white/10 font-bold text-sm">
+              ログイン
             </Button>
             <Button className="bg-white text-black hover:bg-white/90 font-bold px-6 rounded-none">
               資料請求
@@ -96,17 +96,7 @@ export default function Home() {
         
         <div className="container relative z-10 h-full flex items-center">
           <div className="w-full max-w-4xl relative z-20">
-              <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-                className="flex items-center gap-4 mb-8"
-              >
-                <span className="h-[1px] w-12 bg-primary" />
-                <span className="font-mono text-primary text-sm font-bold tracking-widest uppercase">
-                  System Online / Ver. 7.0
-                </span>
-              </motion.div>
+
               
               <motion.h1
                 initial={{ opacity: 0, y: 30 }}
@@ -180,7 +170,7 @@ export default function Home() {
             <div>
               <SectionHeading 
                 align="left"
-                subtitle="THE PROBLEM"
+                subtitle="課題"
                 title={<>こんな悩み、<br />ありませんか？</>}
               />
               <div className="space-y-8">
@@ -200,8 +190,8 @@ export default function Home() {
                   <div className="w-20 h-20 border-2 border-dashed border-muted-foreground rounded-full mx-auto mb-6 flex items-center justify-center">
                     <span className="text-2xl font-bold text-muted-foreground">?</span>
                   </div>
-                  <p className="font-mono text-sm text-muted-foreground tracking-widest uppercase">Connection Lost</p>
-                  <p className="text-white font-bold mt-2">Isolated Knowledge</p>
+                  <p className="font-mono text-sm text-muted-foreground tracking-widest uppercase">つながりの断絶</p>
+                  <p className="text-white font-bold mt-2">孤立した知識</p>
                 </div>
               </div>
               {/* Decorative Elements */}
@@ -216,8 +206,8 @@ export default function Home() {
       <section id="solution" className="py-32 bg-white/[0.02]">
         <div className="container">
           <SectionHeading 
-            subtitle="THE SOLUTION"
-            title={<>THE GLOBAL RESILIENCE HUB 3つの機能<br /><span className="text-muted-foreground text-xl md:text-2xl block mt-4 font-normal">防災に必要な3つの機能が、1か所に揃う。</span></>}
+            subtitle="解決策"
+            title={<>レジハブ 3つの機能<br /><span className="text-muted-foreground text-xl md:text-2xl block mt-4 font-normal">防災に必要な3つの機能が、1か所に揃う。</span></>}
           />
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -293,9 +283,9 @@ export default function Home() {
               {/* Center Column: Individual Plan (New) */}
               <div className="p-6 border border-blue-300/30 bg-blue-900/10 relative flex flex-col">
                 <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-blue-400/20 text-blue-200 text-[10px] font-bold px-3 py-1 uppercase tracking-wider border border-blue-400/30 backdrop-blur-sm">
-                  For Individual
+                  個人向け
                 </div>
-                <h3 className="text-lg font-bold text-blue-100 mb-6">The Global Resilience Hub</h3>
+                <h3 className="text-lg font-bold text-blue-100 mb-6">レジハブ</h3>
                 <ul className="space-y-3 mb-8 flex-grow">
                   <li className="flex items-center gap-3 text-blue-100/80 text-sm">
                     <CheckCircle2 className="w-4 h-4 text-blue-400 flex-shrink-0" />
@@ -323,9 +313,9 @@ export default function Home() {
               {/* Right Column: Corporate Plan (Modified) */}
               <div className="p-6 border-2 border-primary bg-card relative flex flex-col shadow-[0_0_50px_rgba(var(--primary),0.1)]">
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-white text-xs font-bold px-4 py-1 uppercase tracking-wider">
-                  The New Standard
+                  新しいスタンダード
                 </div>
-                <h3 className="text-lg font-bold text-white mb-6">The Global Resilience Hub</h3>
+                <h3 className="text-lg font-bold text-white mb-6">レジハブ</h3>
                 <ul className="space-y-3 mb-8 flex-grow">
                   <li className="flex items-center gap-3 text-white text-sm">
                     <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0" />
