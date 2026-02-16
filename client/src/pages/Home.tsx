@@ -114,8 +114,8 @@ export default function Home() {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-display font-bold text-white mb-8 leading-tight tracking-tight"
               >
-                <span className="inline-block whitespace-nowrap">日本中の防災担当者の「知」が繋がれば、</span><br />
-                <span className="inline-block whitespace-nowrap">どんな困りごとも解決できる。</span>
+                <span className="inline-block whitespace-nowrap">自社の防災レベルを診断し、</span><br />
+                <span className="inline-block whitespace-nowrap">専門家に相談できる。</span>
               </motion.h1>
               
               <motion.p
@@ -124,9 +124,8 @@ export default function Home() {
                 transition={{ duration: 0.8, delay: 0.4 }}
                 className="text-xl md:text-2xl text-muted-foreground mb-12 leading-relaxed"
               >
-                防災大国・日本。でも現場の担当者は、今日もひとりで悩んでいる。<br />
-                その孤立した知識を束ねるプラットフォームが、<br />
-                The Global Resilience Hub です。
+                ニュース・診断・相談、<br />
+                防災に必要な3つが揃う。
               </motion.p>
               
               <motion.div
@@ -136,7 +135,7 @@ export default function Home() {
                 className="flex flex-col sm:flex-row gap-4"
               >
                 <Button size="lg" className="bg-primary hover:bg-primary/90 text-white font-bold text-lg px-10 h-16 rounded-none shadow-[0_0_30px_rgba(var(--primary),0.3)]">
-                  まず無料デモを見る（3分でわかります）
+                  今すぐ診断する
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
               </motion.div>
@@ -239,7 +238,7 @@ export default function Home() {
         <div className="container">
           <SectionHeading 
             subtitle="THE SOLUTION"
-            title={<>THE GLOBAL RESILIENCE HUB 3つの機能<br /><span className="text-muted-foreground text-xl md:text-2xl block mt-4 font-normal">防災情報・自社診断・Q&Aが、1か所に集まった。</span></>}
+            title={<>THE GLOBAL RESILIENCE HUB 3つの機能<br /><span className="text-muted-foreground text-xl md:text-2xl block mt-4 font-normal">防災に必要な3つの機能が、1か所に揃う。</span></>}
           />
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -249,10 +248,10 @@ export default function Home() {
                 <p className="absolute top-2 left-2 z-10 text-xs font-bold text-primary bg-black/80 px-2 py-1 rounded tracking-widest">NEWS</p>
                 <img src="https://files.manuscdn.com/user_upload_by_module/session_file/92549119/JxSqUpegHvHckfTo.png" alt="NEWS" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
               </div>
-              <h3 className="text-xl font-display font-bold text-white mb-4">今日の防災情報が、自動で届く</h3>
+              <h3 className="text-xl font-display font-bold text-white mb-4">最新の防災ニュースをリアルタイムで確認</h3>
               <p className="text-muted-foreground leading-relaxed">
-                国内外の防災ニュースをAIが毎日まとめる<br />
-                自分で調べる時間がゼロになる
+                国内外の防災動向を毎日更新。<br />
+                自社対応の判断材料にすぐ使える。
               </p>
             </TechCard>
 
@@ -262,10 +261,10 @@ export default function Home() {
                 <p className="absolute top-2 left-2 z-10 text-xs font-bold text-primary bg-black/80 px-2 py-1 rounded tracking-widest">DASHBOARD</p>
                 <img src="https://files.manuscdn.com/user_upload_by_module/session_file/92549119/vVUCMWyZqmSXKkys.png" alt="DASHBOARD" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
               </div>
-              <h3 className="text-xl font-display font-bold text-white mb-4">自社の防災レベルが、点数でわかる</h3>
+              <h3 className="text-xl font-display font-bold text-white mb-4">ダッシュボードで自社の防災レベルを診断</h3>
               <p className="text-muted-foreground leading-relaxed">
-                診断結果で「うちはどこが弱いか」が一目瞭然<br />
-                上司への報告資料に、そのまま使える
+                現状の防災レベルをスコア化。<br />
+                改善すべき優先順位が一目でわかる。
               </p>
             </TechCard>
 
@@ -275,10 +274,10 @@ export default function Home() {
                 <p className="absolute top-2 left-2 z-10 text-xs font-bold text-primary bg-black/80 px-2 py-1 rounded tracking-widest">COMMUNITY</p>
                 <img src="https://files.manuscdn.com/user_upload_by_module/session_file/92549119/KuKGDLWLscrlXBrk.png" alt="COMMUNITY" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
               </div>
-              <h3 className="text-xl font-display font-bold text-white mb-4">防災の『困った』を、全国の担当者に聞ける</h3>
+              <h3 className="text-xl font-display font-bold text-white mb-4">世界中の防災担当者にいつでも相談できる</h3>
               <p className="text-muted-foreground leading-relaxed">
-                掲示板のように、質問を投稿できる<br />
-                同じ悩みを持つ担当者からすぐ回答が来る
+                24時間、世界中の担当者・専門家コミュニティに<br />
+                質問・相談が可能。
               </p>
             </TechCard>
           </div>
@@ -383,7 +382,7 @@ export default function Home() {
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Button size="lg" className="bg-primary hover:bg-primary/90 text-white font-bold text-lg px-12 h-20 rounded-none shadow-[0_0_30px_rgba(var(--primary),0.3)]">
-              まず無料デモを見る（3分でわかります）
+              今すぐ診断する
             </Button>
           </div>
         </div>
