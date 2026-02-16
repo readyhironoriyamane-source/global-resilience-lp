@@ -217,7 +217,7 @@ export default function Home() {
                 <p className="absolute top-2 left-2 z-10 text-xs font-bold text-primary bg-black/80 px-2 py-1 rounded tracking-widest">NEWS</p>
                 <img src="https://files.manuscdn.com/user_upload_by_module/session_file/92549119/JxSqUpegHvHckfTo.png" alt="NEWS" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
               </div>
-              <h3 className="text-xl font-display font-bold text-white mb-4">最新の防災ニュースをリアルタイムで確認</h3>
+              <h3 className="text-xl font-display font-bold text-white mb-4">最新の防災ニュースを、<br />リアルタイムで確認</h3>
               <p className="text-muted-foreground leading-relaxed">
                 国内外の防災動向を毎日更新。<br />
                 自社対応の判断材料にすぐ使える。
@@ -230,7 +230,7 @@ export default function Home() {
                 <p className="absolute top-2 left-2 z-10 text-xs font-bold text-primary bg-black/80 px-2 py-1 rounded tracking-widest">DASHBOARD</p>
                 <img src="https://files.manuscdn.com/user_upload_by_module/session_file/92549119/vVUCMWyZqmSXKkys.png" alt="DASHBOARD" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
               </div>
-              <h3 className="text-xl font-display font-bold text-white mb-4">ダッシュボードで自社の防災レベルを診断</h3>
+              <h3 className="text-xl font-display font-bold text-white mb-4">ダッシュボードで、<br />自社の防災レベルを診断</h3>
               <p className="text-muted-foreground leading-relaxed">
                 現状の防災レベルをスコア化。<br />
                 改善すべき優先順位が一目でわかる。
@@ -243,7 +243,7 @@ export default function Home() {
                 <p className="absolute top-2 left-2 z-10 text-xs font-bold text-primary bg-black/80 px-2 py-1 rounded tracking-widest">COMMUNITY</p>
                 <img src="https://files.manuscdn.com/user_upload_by_module/session_file/92549119/KuKGDLWLscrlXBrk.png" alt="COMMUNITY" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
               </div>
-              <h3 className="text-xl font-display font-bold text-white mb-4">全国の防災担当者と、意見交換できる</h3>
+              <h3 className="text-xl font-display font-bold text-white mb-4">全国の防災担当者と、<br />意見交換できる</h3>
               <p className="text-muted-foreground leading-relaxed">
                 24時間、同じ立場の担当者・専門家コミュニティに<br />
                 質問・相談が可能。
