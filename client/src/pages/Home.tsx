@@ -143,7 +143,7 @@ export default function Home() {
                 className="flex flex-col sm:flex-row gap-4"
               >
                 <Button size="lg" className="bg-primary hover:bg-primary/90 text-white font-bold text-lg px-10 h-16 rounded-none shadow-[0_0_30px_rgba(var(--primary),0.3)]">
-                  今すぐ診断する
+                  今すぐ無料ではじめる
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
               </motion.div>
@@ -284,12 +284,15 @@ export default function Home() {
             </div>
 
             {/* Launch Commemoration Banner */}
-            <div className="max-w-3xl mx-auto mb-8">
-              <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg py-3 px-4 text-center">
+            <div className="max-w-3xl mx-auto mb-8 flex flex-col items-center gap-4">
+              <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg py-3 px-4 text-center w-full">
                 <p className="text-blue-300 font-bold text-sm tracking-wide">
                   🎉 3月1日 正式ローンチ記念 全機能を無料でご利用いただけます。
                 </p>
               </div>
+              <Button size="lg" className="bg-white text-primary hover:bg-white/90 font-bold text-lg px-12 h-14 rounded-full shadow-[0_0_20px_rgba(255,255,255,0.2)]">
+                今すぐ無料ではじめる
+              </Button>
             </div>
 
             <div className="grid md:grid-cols-3 gap-6 items-stretch mb-12">
