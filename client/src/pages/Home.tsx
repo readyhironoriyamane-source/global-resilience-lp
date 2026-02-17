@@ -126,6 +126,19 @@ export default function Home() {
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.5 }}
+                className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 border border-blue-500/30 text-blue-300 text-sm font-bold mb-12"
+              >
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+                </span>
+                🎉 3月1日 正式ローンチ記念
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="flex flex-col sm:flex-row gap-4"
               >
@@ -134,6 +147,14 @@ export default function Home() {
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
               </motion.div>
+              <motion.p
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.8, delay: 0.8 }}
+                className="mt-3 text-sm text-muted-foreground font-medium"
+              >
+                全機能を無料でご利用いただけます。
+              </motion.p>
 
             </div>
 
@@ -262,7 +283,14 @@ export default function Home() {
               </h2>
             </div>
 
-
+            {/* Launch Commemoration Banner */}
+            <div className="max-w-3xl mx-auto mb-8">
+              <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg py-3 px-4 text-center">
+                <p className="text-blue-300 font-bold text-sm tracking-wide">
+                  🎉 3月1日 正式ローンチ記念 全機能を無料でご利用いただけます。
+                </p>
+              </div>
+            </div>
 
             <div className="grid md:grid-cols-3 gap-6 items-stretch mb-12">
               {/* Left Column: Expert/Consultant */}
@@ -367,6 +395,7 @@ export default function Home() {
             <Button size="lg" className="bg-primary hover:bg-primary/90 text-white font-bold text-lg px-12 h-20 rounded-none shadow-[0_0_30px_rgba(var(--primary),0.3)]">
               今すぐ診断する
             </Button>
+            <p className="text-white/40 text-sm font-medium mt-4">🎉 3月1日 正式ローンチ記念 全機能を無料でご利用いただけます。</p>
           </div>
         </div>
       </section>
